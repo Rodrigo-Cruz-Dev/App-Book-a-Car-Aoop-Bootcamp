@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="sys_db_object" version="2" view="bookingacar">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Table - Bookingacar" name="sys_db_object" related_list="NULL" sys_domain="global" view="a716597093e6a61025f57b732bba1059">b914f578936aa61025f57b732bba10d0</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:27900e83c3713000bac1addbdfba8fb6</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 19:49:36</sys_created_on>
+            <sys_id>7514f578936aa61025f57b732bba10d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 19:49:36</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Table - Bookingacar" name="sys_db_object" related_list="NULL" sys_domain="global" view="a716597093e6a61025f57b732bba1059">b914f578936aa61025f57b732bba10d0</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:6ad364caff220210f93c711d03cb1474</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 19:49:36</sys_created_on>
+            <sys_id>7914f578936aa61025f57b732bba10d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 19:49:36</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Table - Bookingacar" name="sys_db_object" related_list="NULL" sys_domain="global" view="a716597093e6a61025f57b732bba1059">b914f578936aa61025f57b732bba10d0</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:17a52313bf1030001875647fcf0739d4</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 19:49:36</sys_created_on>
+            <sys_id>7d14f578936aa61025f57b732bba10d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 19:49:36</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Table - Bookingacar" name="sys_db_object" related_list="NULL" sys_domain="global" view="a716597093e6a61025f57b732bba1059">b914f578936aa61025f57b732bba10d0</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>v_index_creator.table</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 19:49:36</sys_created_on>
+            <sys_id>7114f578936aa61025f57b732bba10d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 19:49:36</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Table - Bookingacar" name="sys_db_object" related_list="NULL" sys_domain="global" view="a716597093e6a61025f57b732bba1059">b914f578936aa61025f57b732bba10d0</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>REL:a81e90f153311200efd6cbaac2dc3451</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 19:49:36</sys_created_on>
+            <sys_id>7514f578936aa61025f57b732bba10d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 19:49:36</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Table - Bookingacar</calculated_name>
+            <filter/>
+            <name>sys_db_object</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 19:49:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b914f578936aa61025f57b732bba10d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Table - Bookingacar</sys_name>
+            <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+            <sys_update_name>sys_ui_related_sys_db_object_bookingacar</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 19:49:36</sys_updated_on>
+            <sys_user/>
+            <view display_value="Bookingacar" name="bookingacar">a716597093e6a61025f57b732bba1059</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>true</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>true</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>true</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1792436_book_a_c_booking</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1792436_book_a_c_booking">start_dateISNOTEMPTY^end_dateISNOTEMPTY^end_dateLESSTHANstart_date@hour@before@2^EQ<item endquery="false" field="start_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="end_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="end_date" goto="false" newquery="false" operator="LESSTHAN" or="false" value="start_date@hour@before@2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p style="text-align: center;">Invalid date.<br />End date has to be after start date!</p>]]></message>
+        <name>data check</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[if (current.end_date && current.start_date && current.end_date < current.start_date) {
+  gs.addErrorMessage("End date can't be before start date.");
+  current.setAbortAction(true);
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-06 02:08:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c9962639936eea1025f57b732bba10b1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>data check</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name>sys_script_c9962639936eea1025f57b732bba10b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-06 02:45:30</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=c9962639936eea1025f57b732bba10b1"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book a car">f1957de89366661025f57b732bba103a</application>
+        <file_path/>
+        <instance_id>106601b8ebb86294cbdefceacad0cd8f</instance_id>
+        <instance_name>dev319062</instance_name>
+        <name>sys_script_c9962639936eea1025f57b732bba10b1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;true&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;true&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;true&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1792436_book_a_c_booking&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1792436_book_a_c_booking"&gt;start_dateISNOTEMPTY^end_dateISNOTEMPTY^end_dateLESSTHANstart_date@hour@before@2^EQ&lt;item endquery="false" field="start_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="false" field="end_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="false" field="end_date" goto="false" newquery="false" operator="LESSTHAN" or="false" value="start_date@hour@before@2"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message&gt;&lt;![CDATA[&lt;p style="text-align: center;"&gt;Invalid date.&lt;br /&gt;End date has to be after start date!&lt;/p&gt;]]&gt;&lt;/message&gt;&lt;name&gt;data check&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[if (current.end_date &amp;&amp; current.start_date &amp;&amp; current.end_date &lt; current.start_date) {
+  gs.addErrorMessage("End date can't be before start date.");
+  current.setAbortAction(true);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-06 02:08:31&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c9962639936eea1025f57b732bba10b1&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;data check&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Book a car" source="x_1792436_book_a_c"&gt;f1957de89366661025f57b732bba103a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_c9962639936eea1025f57b732bba10b1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-06 02:45:30&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c9962639936eea1025f57b732bba10b1"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1918399321</payload_hash>
+        <record_name>data check</record_name>
+        <reverted_from/>
+        <source>7d957de89366661025f57b732bba103b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-06 02:45:30</sys_created_on>
+        <sys_id>cf003ef193aeea1025f57b732bba1090</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197dd9fd9e50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-06 02:45:30</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>c3003ef199aeea10bdc38fd4a2695f90</update_guid>
+        <update_guid_history>c3003ef199aeea10bdc38fd4a2695f90:1918399321,b18fa6f12caeea10b66b4a7cd0a76ff0:-1910925072,edaea27190aeea10ff9d8d1491dc0b23:1611046413,25fa6e7dbc6eea10335b51e73e1eb3e8:-1898273433,7dba6a7d136eea1066d146839f0f140b:1724141871,a70aaa3d366eea10c2d7b97a29b3f6dc:1310825179,dc9866b9276eea10d066d557d4839050:-389579927,f208ea79376eea106b642573ed966f20:-209651179,1d972239e16eea101330ddf5f34e2d4f:-1839966461</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-06 02:48:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>b712c4d8bead4f2fa7183b1e0d085549</sys_id>
+        <sys_metadata>c9962639936eea1025f57b732bba10b1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>data check</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_parent display_value="Booking">12fa657c932aa61025f57b732bba1020</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_scope_delete display_value="">31d2f76aabe44b8faa919cfb2969e021</sys_scope_delete>
+        <sys_update_name>sys_script_c9962639936eea1025f57b732bba10b1</sys_update_name>
+        <sys_update_version display_value="sys_script_c9962639936eea1025f57b732bba10b1">cf003ef193aeea1025f57b732bba1090</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-06 02:48:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

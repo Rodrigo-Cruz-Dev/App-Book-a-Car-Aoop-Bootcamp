@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_taxonomy">
+    <m2m_sp_portal_taxonomy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sp_portal display_value="Book a car">435691fd93a6ea1025f57b732bba10eb</sp_portal>
+        <sys_class_name>m2m_sp_portal_taxonomy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-05 22:21:56</sys_created_on>
+        <sys_id>56b33135936aea1025f57b732bba1011</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Book a car.Employee</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name>m2m_sp_portal_taxonomy_56b33135936aea1025f57b732bba1011</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-05 22:21:56</sys_updated_on>
+        <taxonomy display_value="Employee">1f5d5a40c3203010069aec4b7d40dd93</taxonomy>
+    </m2m_sp_portal_taxonomy>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Book a Car">9b8d41f193a6ea1025f57b732bba1098</catalog_item>
+        <catalog_variable>IO:67c11d3993a6ea1025f57b732bba1049</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-06 01:01:57</sys_created_on>
+        <sys_id>d258de35932eea1025f57b732bba10bd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>description</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_d258de35932eea1025f57b732bba10bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-06 01:03:07</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'description' mandatory &amp; visible depending on 'shortdescription'">fc189a35932eea1025f57b732bba101a</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>description</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=d258de35932eea1025f57b732bba10bd"/>
+</record_update>

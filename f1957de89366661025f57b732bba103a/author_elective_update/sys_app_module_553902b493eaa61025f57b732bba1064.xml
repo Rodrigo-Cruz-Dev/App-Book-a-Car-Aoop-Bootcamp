@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>NEW</link_type>
+        <map_page/>
+        <mobile_title>New</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1792436_book_a_c_vehicle</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 21:22:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>553902b493eaa61025f57b732bba1064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name>sys_app_module_553902b493eaa61025f57b732bba1064</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 21:22:18</sys_updated_on>
+        <timeline_page/>
+        <title>New</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book a car">f1957de89366661025f57b732bba103a</application>
+        <file_path/>
+        <instance_id>106601b8ebb86294cbdefceacad0cd8f</instance_id>
+        <instance_name>dev319062</instance_name>
+        <name>sys_app_module_553902b493eaa61025f57b732bba1064</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application/><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>NEW</link_type><map_page/><mobile_title>New</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1792436_book_a_c_vehicle</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-02 21:22:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>553902b493eaa61025f57b732bba1064</sys_id><sys_mod_count>0</sys_mod_count><sys_name>New</sys_name><sys_overrides/><sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package><sys_policy/><sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope><sys_update_name>sys_app_module_553902b493eaa61025f57b732bba1064</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-02 21:22:18</sys_updated_on><timeline_page/><title>New</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-2082993730</payload_hash>
+        <record_name>New</record_name>
+        <reverted_from/>
+        <source>7d957de89366661025f57b732bba103b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 21:26:50</sys_created_on>
+        <sys_id>8e5a0ef493eaa61025f57b732bba10bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197cd0908f40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 21:26:50</sys_updated_on>
+        <type>Module</type>
+        <update_guid>2b49c6b40eeaa610880c5b3406abd309</update_guid>
+        <update_guid_history>2b49c6b40eeaa610880c5b3406abd309:353301200,2b49c6b40eeaa610880c5b3406abd309:353301200</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="New">697acef493eaa61025f57b732bba10b8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 21:27:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>2ace55bbe67e44a097db08a300097f10</sys_id>
+        <sys_metadata>553902b493eaa61025f57b732bba1064</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_scope_delete display_value="">31d2f76aabe44b8faa919cfb2969e021</sys_scope_delete>
+        <sys_update_name>sys_app_module_553902b493eaa61025f57b732bba1064</sys_update_name>
+        <sys_update_version display_value="sys_app_module_553902b493eaa61025f57b732bba1064">8e5a0ef493eaa61025f57b732bba10bb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 21:27:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_1792436_book_a_c_booking">x_1792436_book_a_c_booking</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>BKG</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 19:02:58</sys_created_on>
+        <sys_id>e269adb8932aa61025f57b732bba108a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BKG</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name>sys_number_e269adb8932aa61025f57b732bba108a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 19:07:53</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book a car">f1957de89366661025f57b732bba103a</application>
+        <file_path/>
+        <instance_id>106601b8ebb86294cbdefceacad0cd8f</instance_id>
+        <instance_name>dev319062</instance_name>
+        <name>sys_number_e269adb8932aa61025f57b732bba108a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_1792436_book_a_c_booking">x_1792436_book_a_c_booking</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>BKG</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-02 19:02:58</sys_created_on><sys_id>e269adb8932aa61025f57b732bba108a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>BKG</sys_name><sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package><sys_policy/><sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope><sys_update_name>sys_number_e269adb8932aa61025f57b732bba108a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-02 19:07:53</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>-1111658171</payload_hash>
+        <record_name>BKG</record_name>
+        <reverted_from/>
+        <source>7d957de89366661025f57b732bba103b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 19:07:55</sys_created_on>
+        <sys_id>078ae53c932aa61025f57b732bba107c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197cc89daaa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 19:07:55</sys_updated_on>
+        <type>Number</type>
+        <update_guid>c78ae53c7a2aa6103fea0b007667d97b</update_guid>
+        <update_guid_history>c78ae53c7a2aa6103fea0b007667d97b:-1111658171,3e69adb8522aa610ef291ca6093ad1bf:-326913851</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 19:09:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>018b96e698eb45da80104111d3053824</sys_id>
+        <sys_metadata>e269adb8932aa61025f57b732bba108a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BKG</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_parent display_value="">508ed17c93e6a61025f57b732bba1065</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_scope_delete display_value="">31d2f76aabe44b8faa919cfb2969e021</sys_scope_delete>
+        <sys_update_name>sys_number_e269adb8932aa61025f57b732bba108a</sys_update_name>
+        <sys_update_version display_value="sys_number_e269adb8932aa61025f57b732bba108a">078ae53c932aa61025f57b732bba107c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 19:09:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

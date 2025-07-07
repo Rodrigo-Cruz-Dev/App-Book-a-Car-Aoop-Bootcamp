@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>New Booking</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Booking</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">b291d46b9820221055904c91e2b65451</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 16:40:24</sys_created_on>
+        <sys_id>0ac801fc9366a61025f57b732bba101d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Booking</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name>sys_wizard_answer_0ac801fc9366a61025f57b732bba101d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 16:40:24</sys_updated_on>
+        <table/>
+        <target_url>x_1792436_book_a_c_booking.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book a car">f1957de89366661025f57b732bba103a</application>
+        <file_path/>
+        <instance_id>106601b8ebb86294cbdefceacad0cd8f</instance_id>
+        <instance_name>dev319062</instance_name>
+        <name>sys_wizard_answer_0ac801fc9366a61025f57b732bba101d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>New Booking</answer><button_label/><dependent_value/><element/><name>Booking</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">b291d46b9820221055904c91e2b65451</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-02 16:40:24</sys_created_on><sys_id>0ac801fc9366a61025f57b732bba101d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Booking</sys_name><sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package><sys_policy/><sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope><sys_update_name>sys_wizard_answer_0ac801fc9366a61025f57b732bba101d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-02 16:40:24</sys_updated_on><table/><target_url>x_1792436_book_a_c_booking.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>-52353249</payload_hash>
+        <record_name>Booking</record_name>
+        <reverted_from/>
+        <source>7d957de89366661025f57b732bba103b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 16:40:24</sys_created_on>
+        <sys_id>82c801fc9366a61025f57b732bba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197cc02c9920000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 16:40:24</sys_updated_on>
+        <type>Answer</type>
+        <update_guid>86c801fc8766a6109da9ed928e233020</update_guid>
+        <update_guid_history>86c801fc8766a6109da9ed928e233020:-52353249</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 18:15:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>4ef7e04e0af0412caa7b80d5e1a6b710</sys_id>
+        <sys_metadata>0ac801fc9366a61025f57b732bba101d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Booking</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_parent display_value="Task">b291d46b9820221055904c91e2b65451</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_scope_delete display_value="">31d2f76aabe44b8faa919cfb2969e021</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_0ac801fc9366a61025f57b732bba101d</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_0ac801fc9366a61025f57b732bba101d">82c801fc9366a61025f57b732bba1021</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 18:15:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

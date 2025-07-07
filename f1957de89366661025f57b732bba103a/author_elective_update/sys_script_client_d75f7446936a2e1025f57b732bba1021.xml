@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Validate End date, so it can't be before Start Date.</description>
+        <field>end_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate End Date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    // Exit if the form is loading or the new value is empty
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var startDate = g_form.getValue('start_date'); // Get the value of the 'start_date' field
+
+    // Only proceed if 'start_date' has a value
+    if (startDate) {
+        // Convert date strings to Date objects for comparison
+        var endDateObj = new Date(newValue);
+        var startDateObj = new Date(startDate);
+
+        // Compare the dates
+        if (endDateObj < startDateObj) {
+            g_form.clearValue('end_date'); // Clear the invalid end date
+            g_form.showErrorBox('end_date', getMessage('End date can not be before start date.')); // Show an error message
+        } else {
+            // If the date is valid, ensure any previous error message is cleared
+            g_form.hideErrorBox('end_date');
+        }
+    }]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-06 13:15:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d75f7446936a2e1025f57b732bba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate End Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name>sys_script_client_d75f7446936a2e1025f57b732bba1021</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-06 13:15:24</sys_updated_on>
+        <table>x_1792436_book_a_c_booking</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book a car">f1957de89366661025f57b732bba103a</application>
+        <file_path/>
+        <instance_id>106601b8ebb86294cbdefceacad0cd8f</instance_id>
+        <instance_name>dev319062</instance_name>
+        <name>sys_script_client_d75f7446936a2e1025f57b732bba1021</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Validate End date, so it can't be before Start Date.&lt;/description&gt;&lt;field&gt;end_date&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Validate End Date&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    // Exit if the form is loading or the new value is empty
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var startDate = g_form.getValue('start_date'); // Get the value of the 'start_date' field
+
+    // Only proceed if 'start_date' has a value
+    if (startDate) {
+        // Convert date strings to Date objects for comparison
+        var endDateObj = new Date(newValue);
+        var startDateObj = new Date(startDate);
+
+        // Compare the dates
+        if (endDateObj &lt; startDateObj) {
+            g_form.clearValue('end_date'); // Clear the invalid end date
+            g_form.showErrorBox('end_date', getMessage('End date can not be before start date.')); // Show an error message
+        } else {
+            // If the date is valid, ensure any previous error message is cleared
+            g_form.hideErrorBox('end_date');
+        }
+    }]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-06 13:15:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d75f7446936a2e1025f57b732bba1021&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Validate End Date&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Book a car" source="x_1792436_book_a_c"&gt;f1957de89366661025f57b732bba103a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_d75f7446936a2e1025f57b732bba1021&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-06 13:15:24&lt;/sys_updated_on&gt;&lt;table&gt;x_1792436_book_a_c_booking&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1555420572</payload_hash>
+        <record_name>Validate End Date</record_name>
+        <reverted_from/>
+        <source>7d957de89366661025f57b732bba103b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-06 13:15:24</sys_created_on>
+        <sys_id>0a304586936a2e1025f57b732bba10b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197dfe08a790000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-06 13:15:24</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>0e3045860b6a2e10f9bc7c3a280971b6</update_guid>
+        <update_guid_history>0e3045860b6a2e10f9bc7c3a280971b6:1555420572</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-06 13:48:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>3c95e9e5e989485ca5c4056ef9937ea9</sys_id>
+        <sys_metadata>d75f7446936a2e1025f57b732bba1021</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate End Date</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_parent display_value="Booking">12fa657c932aa61025f57b732bba1020</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_scope_delete display_value="">31d2f76aabe44b8faa919cfb2969e021</sys_scope_delete>
+        <sys_update_name>sys_script_client_d75f7446936a2e1025f57b732bba1021</sys_update_name>
+        <sys_update_version display_value="sys_script_client_d75f7446936a2e1025f57b732bba1021">0a304586936a2e1025f57b732bba10b7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-06 13:48:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

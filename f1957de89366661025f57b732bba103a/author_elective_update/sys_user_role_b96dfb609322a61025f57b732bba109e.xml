@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1792436_book_a_c.vehicle_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>vehicle_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 11:11:04</sys_created_on>
+        <sys_id>b96dfb609322a61025f57b732bba109e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1792436_book_a_c.vehicle_user</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name>sys_user_role_b96dfb609322a61025f57b732bba109e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 11:11:04</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book a car">f1957de89366661025f57b732bba103a</application>
+        <file_path/>
+        <instance_id>106601b8ebb86294cbdefceacad0cd8f</instance_id>
+        <instance_name>dev319062</instance_name>
+        <name>sys_user_role_b96dfb609322a61025f57b732bba109e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_1792436_book_a_c.vehicle_user</name><scoped_admin>false</scoped_admin><suffix>vehicle_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-02 11:11:04</sys_created_on><sys_id>b96dfb609322a61025f57b732bba109e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1792436_book_a_c.vehicle_user</sys_name><sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package><sys_policy/><sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope><sys_update_name>sys_user_role_b96dfb609322a61025f57b732bba109e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-02 11:11:04</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-2016519811</payload_hash>
+        <record_name>x_1792436_book_a_c.vehicle_user</record_name>
+        <reverted_from/>
+        <source>7d957de89366661025f57b732bba103b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 11:11:04</sys_created_on>
+        <sys_id>b56dfb609322a61025f57b732bba10a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197cad5462a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 11:11:04</sys_updated_on>
+        <type>Role</type>
+        <update_guid>796dfb600c22a610d70c1691b21f49a4</update_guid>
+        <update_guid_history>796dfb600c22a610d70c1691b21f49a4:-2016519811</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1792436_book_a_c.vehicle_user">d0aa2ac993622a1025f57b732bba108e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-03 18:26:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>67059a7a310f4348b6e49b7877fcfe04</sys_id>
+        <sys_metadata>b96dfb609322a61025f57b732bba109e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1792436_book_a_c.vehicle_user</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_scope_delete display_value="">31d2f76aabe44b8faa919cfb2969e021</sys_scope_delete>
+        <sys_update_name>sys_user_role_b96dfb609322a61025f57b732bba109e</sys_update_name>
+        <sys_update_version display_value="sys_user_role_b96dfb609322a61025f57b732bba109e">b56dfb609322a61025f57b732bba10a5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-03 18:26:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

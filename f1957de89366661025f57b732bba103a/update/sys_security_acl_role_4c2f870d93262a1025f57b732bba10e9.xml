@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-03 21:06:10</sys_created_on>
+        <sys_id>4c2f870d93262a1025f57b732bba10e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_1792436_book_a_c.fleet_user</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_security_acl display_value="x_1792436_book_a_c_booking.requested_vehicle">ce1f870d93262a1025f57b732bba1044</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4c2f870d93262a1025f57b732bba10e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-03 21:06:10</sys_updated_on>
+        <sys_user_role display_value="x_1792436_book_a_c.fleet_user" name="x_1792436_book_a_c.fleet_user">8496d20193222a1025f57b732bba108f</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

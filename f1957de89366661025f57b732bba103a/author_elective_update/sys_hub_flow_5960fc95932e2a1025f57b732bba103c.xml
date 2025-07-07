@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=50408000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>book_a_car</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Booking Record","reference":"x_1792436_book_a_c_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"d9b55790-5e4c-49bb-8ed1-51417bcd766b":["record"],"683e4984-c8f8-4e52-8c91-c48904908114":["record"]},"attributes":{}},{"name":"{{static.a1fe120d93222a1025f57b732bba10ef}}","label":"Booking - Gestores","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"d9b55790-5e4c-49bb-8ed1-51417bcd766b":["approval_conditions"]}},{"name":"d9b55790-5e4c-49bb-8ed1-51417bcd766b.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"75d7c820-a4e5-461b-af9d-41fb52b5578c":["condition"],"90c1a182-d187-47ad-aacf-7505fdbefb6e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Booking Table","reference":"x_1792436_book_a_c_booking","reference_display":"Booking","type":"table_name","base_type":"table_name","usedInstances":{"d9cdbb68-8667-46c4-b085-345395faeb4f":["table_name"],"b2f12d91-a205-4f37-a97a-c5bab4a446d6":["table_name"],"09639896-f46a-4227-a889-38f9a4ac34f3":["table_name"],"0d5deb41-c0a3-4748-a0b9-44f9c29f2717":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Booking Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1792436_book_a_c_booking","column_name":"sys_id","usedInstances":{"ae2fe099-621d-4f09-9f1e-3e3e0e1e48df":["conditions"]}},{"name":"ae2fe099-621d-4f09-9f1e-3e3e0e1e48df.Table","label":"7 - Look Up Record➛Vehicle Table","reference":"x_1792436_book_a_c_vehicle","reference_display":"Vehicle","type":"table_name","base_type":"table_name","usedInstances":{"16e8acf4-b6bd-4542-8f22-d7bd8e437898":["table_name"],"81bf03b8-bec3-46b5-848e-57cbc659a227":["table_name"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}}]</label_cache>
+        <master_snapshot>553e2bdd93aa6a1025f57b732bba1095</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Book a car</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>a53e2bdd93aa6a1025f57b732bba10e4</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 04:10:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5960fc95932e2a1025f57b732bba103c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Book a car</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name>sys_hub_flow_5960fc95932e2a1025f57b732bba103c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:15:14</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=5960fc95932e2a1025f57b732bba103c"/>
+    <sys_variable_value action="DELETE" query="document_key=5960fc95932e2a1025f57b732bba103c"/>
+    <sys_flow_record_trigger action="DELETE">
+        <active>true</active>
+        <condition table="x_1792436_book_a_c_booking">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a53e2bdd93aa6a1025f57b732bba10e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:08</sys_updated_on>
+        <table>x_1792436_book_a_c_booking</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="DELETE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>5960fc95932e2a1025f57b732bba103c</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:11:00</sys_created_on>
+        <sys_id>b8b0b3d193ea6a1025f57b732bba102b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:11:00</sys_updated_on>
+        <trigger display_value="">a53e2bdd93aa6a1025f57b732bba10e4</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=5960fc95932e2a1025f57b732bba103c^sys_idNOT INb8b0b3d193ea6a1025f57b732bba102b"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=5960fc95932e2a1025f57b732bba103c"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=5960fc95932e2a1025f57b732bba103c^sys_idNOT IN9d60fc95932e2a1025f57b732bba103c"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>5960fc95932e2a1025f57b732bba103c</id>
+        <name>Book a car</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 04:10:49</sys_created_on>
+        <sys_id>9d60fc95932e2a1025f57b732bba103c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 04:10:49</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=9d60fc95932e2a1025f57b732bba103c"/>
+    <sys_hub_flow_input action="DELETE" query="model=5960fc95932e2a1025f57b732bba103c^sys_idNOT INbe2ea7dd93aa6a1025f57b732bba10d7,fe2ea7dd93aa6a1025f57b732bba10de"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Book a car">5960fc95932e2a1025f57b732bba103c</model>
+        <model_id>5960fc95932e2a1025f57b732bba103c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5960fc95932e2a1025f57b732bba103c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:56</sys_created_on>
+        <sys_id>be2ea7dd93aa6a1025f57b732bba10d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 17:59:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=be2ea7dd93aa6a1025f57b732bba10d7"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Book a car">5960fc95932e2a1025f57b732bba103c</model>
+        <model_id>5960fc95932e2a1025f57b732bba103c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5960fc95932e2a1025f57b732bba103c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>fe2ea7dd93aa6a1025f57b732bba10de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 17:59:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=fe2ea7dd93aa6a1025f57b732bba10de"/>
+    <sys_hub_flow_output action="DELETE" query="model=5960fc95932e2a1025f57b732bba103c"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=5960fc95932e2a1025f57b732bba103c"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=5960fc95932e2a1025f57b732bba103c^sys_idNOT IN762ee7dd93aa6a1025f57b732bba1003"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>762ee7dd93aa6a1025f57b732bba1003</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:05</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY2W7jNhT9FUFPLeACWrzEeZtxMmiA6QS1Pe1DkAqURNrE0KQrUUo8g/x7L7VZ1uIlVqbOSxCR1L2HR+eeS/rhh86Qi5l+rc+Ry7De0ymXOOCIzTdrDMNSDTscrdTcCnEfSRFs9GsZRLink0Cs5ni1ZkjCYoJYCIMi8HGgX5s9PUYswrNNeOdDJHg/CZPF1LNpeH52zNHY6ttDxxXim4McL/mH8gUs8mkI4Td/ZWs/FhPekjI/wFy/fnjs6WsUQHCpEv+oTFGV3SMeGlvY8GzTtizDsK76pju0XdPybYQNAwJWmaiglQ2EbLeKnyXmPvYLFmpcBRj595xtihVLoDrlZYWeQ/odol8Zah3BgN3D6Vzx6GRMpMPeUlAP368lFTwdSXGmk4JFK/4lxa84xARFTOYcwkgUQjy8VpAViAwRmS3F0zRP+InyZHfZJBMeYsUTkjKgbiRxqAgnlAH1TspNKKIgQT+9ndxPb5y/P8wnv99OnentbD69m8xvb/SXZF/Ov5GKmCLMsDjpdl6KD/+JYqY+II9WLqDp6aEX0LX84Eka55p76W11PBHcpwkrNS17+VS4q+V89/vEbBitcvZKGXNJ/3P7Z1276eBpuh0OEfIxatGtS0q6Le+8AZpsIKG8u30KzkaOkXDfMP4nEWeW9FoNr4SP2c02nA6TiwWomvJ1JBVbT4jL0JHCQb7vlHhUSwHTIVGne3s5qOAg4vCCU3yPuo4T2gr+PtMQ4D5AFebcJCFhnnzOQk4jrgn4cPBH86IAqJFa7mvkboUWGaNkhhn2ZEkE5GtYfvqDhqGy3y3qImnCQS1nkQ7EpOVbSnOHZyZ/7LKI66THFTIrxXxyJZsmIS4mljFSdWwatktMY2QMEPFtw/CsUiXXwbSilBVJvElFn1bPYSJGdoT0qhRn4I1yNRwlo3hXgzkJSiKZbUy6gWZ2BM1S0Cr2Z5/kf4Us0+GbXXXu21rHvR/5MYI3/GNt8EgHJEw8gfW+wv1c5H1bBCLiftWOVEyNcm27Qvsl4+/XDp2QiADvB7C74pI8cEt7LlzENx24n01Md4z72ADTs8Hv3MF47HrIImQ0HGHLrLjfFkYjtnfhegfUFjfJtc0BG4UTN+ntBO87A2DNB08GeL4DZsJs9L907n043dMScwegBg5TXlYzvAWjPs7nuq32Wup4W9/nVjy5GnsDczTyRnBrgYonfewis28N0Hg0tK8GlYqvQdkHUzYw81PuMuEmTIC0uMHXdOqyLudvKdsQS5n+HHNql+Zwjk3eQWmSUqdUn0VLTEUE2hfBf7vbrtNmGBpgcqHtql0fg0J9WO1tYbhCLmvnBUj9EcZ3UqtzZgsrF3elqogk3t3r2Vcq3L8ajIndbDFk3GQxWzDtMC/+eHFkhcSttdZ0zjhW8HFj3bQeDF4h4YpMyieGPUearkgxOyfFejtS7LOPUXkttt4jXwP2HbWw5FxxTh9TObEjSNm8b4QGExok0SjRsl8Ssa+5G00uMVDK4LwMCTWV/VzXLneROpRCwT8XSHoCr3UzGNayA9TlNaqKFLq9AWN/hAYDu+U8PK7egJsAHcB78W3r5KqIm4psb+86LW41ZmP3Kkl2VxFH9qVOd93cnM7bdWN7OrTr8xvPvvt7A4oLbSmP/wGIVdPzRB8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=5960fc95932e2a1025f57b732bba103c^sys_idNOT IN0b2ee7dd93aa6a1025f57b732bba100a,762ee7dd93aa6a1025f57b732bba1005,832ee7dd93aa6a1025f57b732bba100c,8b2ee7dd93aa6a1025f57b732bba100b,ba2ee7dd93aa6a1025f57b732bba1008,c32ee7dd93aa6a1025f57b732bba100d,c32ee7dd93aa6a1025f57b732bba100e,cb2ee7dd93aa6a1025f57b732bba100d"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment>Atualiza status do Campo Status do Form Booking para Aprovado</comment>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>0b2ee7dd93aa6a1025f57b732bba100a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:13:14</sys_updated_on>
+        <ui_id>b2f12d91-a205-4f37-a97a-c5bab4a446d6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhJ04y8jZQ8bS2sJS9dMdfWdSKQZU+S03om/31XkewEL/solMEedXSu7jnHPk8dE5wt2XQxX8wBp/NZNpvOkmR2nd9wjlgUi2wyLa5ZxBSUSEwLmcT0eIjYHmTjwK5baQSLPJ3EJ8LhQBQuTC2h3QQmIflOSK5RseXTc8Rq0ES1qNmyG139rTIJGUqiPrrNV3de2iW5tq0vYp8uPVBp7kQlEcNXi4ojqSlAGoxYCYqDrXTLllY3BJB5fq9kOzB2QlnvtoRXI77T2g+J4xVI9vKQxHBMQ0oeLm7BwgO9nNtGD6FVIkfjg+FYQCPt6hzzhPvaikr5kaPNMF3JplR3PhI2PHD2URpDIrB2Pp3yYKN42FUvX3qVa6GOkYRLWeUghxNYq0XWWKenY414vJC1R/u0XXQEosSSdqYl1LVQ27TW1V4c95DsMt5KOsSFrF5InxFbFUPuPMb0BSBeE357hDeghdv1mZ6h4UPETGtWEow52aa802+NE+1DCHZTn5gbybWo7UdasMfg7BD1Fcl++yPC6Z8rBEpuzuphLHXja0MzfPJzJUa3b6zHn1X19Vj3ssYy+1pgSbIspl72qBrh8moTLkM9Ju9Vj5t5kvxPDfHO3qEg49T/YUloWW1Q29Sz+3Vv785Zy3/RoucfS9Zwg2oGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>762ee7dd93aa6a1025f57b732bba1005</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:13:14</sys_updated_on>
+        <ui_id>d9b55790-5e4c-49bb-8ed1-51417bcd766b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Yy3LbNhT9FQ/WsgqSIkVp51rjTjptMmO72VgeDgiAFlqKVAjQscrRv/cSAB+RbEVKlIXrbDzGfQDnXp6Dh+4qJBiaonGYuHwycXHsYOxhHPoUhx6PvXEw9gjFaIAysuQQWXCaFwzGjyQta0NVXRacKM4iZ0jLouCZ2mzAz4RcpWT90YaBhS5EysCPpnf3A7QiBcyoeIGm1ZbrUEgpiXkKodcNpm2Mar2qxyyn5RJwRaIx/mEzZ9Zz9m4GHkiq4eAB4k+KZ4wDjoSkkg/QkmSMqLxYo6kqSjBAzexDlq7biIXIlKlzSZ6k+BcW9tw6LuFQGLU9aIeR7Y8xJzOiyA3MTFVZtO3KBeXStITxhJSpuuzbTMCHlRJ5ZlIUidMmO0/LZfbeNAS1E/Q+RykBBF/VddbITVnJzSL/fN2AvBKZ7ogtMc0pSdsRUaoQcalqOBXiKdctXpLVSmQP0arIH4VOBijL4UMKg2GS5p9hTSkesiGhNe4hdJUMr8A+0+aPpBB1EX/CNJC8GSC5lpcpkbIrBXoYfSprJKYwW0Kku2BaUOfRQqzUBazyyC3mzcDSPaZ7uUU7KpnpOrY/Rc544o68IIrz/J+IRFT/AxXvUv7X1nEc8w9A1zD/1sLbQmt5r4eR9n1Je5129t44LOud/ay3lo72hi/PsD7Er4j1tqxXT/uvMZ6PAs+HP+PEw47r4JAHYUgnmNAwCPyR13EIEEANJI3gU0uYu+P+CTb1A2A01L6wOM6uGxwvArR0l/BhtNz6VL9pjJbm7pE0f3l3d4K3RPRS3G512Vh2+vxjFFEv91cmPpX8Xc2jwI2DCQ7ZOUtwfD4KPf+cUI7PeeD43GcB9R3vB6gIO/t2ZhY+Q9JE8LR/XWocu2LqeY4T1QGodkR1ZWG9BNdKSg+fO0F0/tYJcjpphRi/Jm29pasT3Us23jtI/s7LItujgGghpGbGi0roRRyniANANor43aDcFsQ2+G/Rg/dTD/9/PYz8vVTrXc5bVtM8Y6JGLHuqMDszlxfZ+re7qpKKKEGHxEm442I28VzXJQ52/cQfx2PPjWMY8WSzud+Vz/dMdZzODii+faOXKZdfa4ZVWXfDs0l9pXX3Quu0ahud6tX+ysT2Vl4wdC/XkknHLVZCg4jqP9urOTKw52g6R1me8TkazFEdFdXk0maIAHCtQ9uqarMxlrIgdgKnN+yyGVlLHSnpgjPgprZ+YYm0GKz9FL+RHdCTRn+zkp/NTFN229Q8oBqcpi9i55S7sQF6pl9uRf+080922o1+yu8Uz6WofVDAUQa73wk1ef8fMtyzBTgWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment>Atualiza o campo Avaible do campo da Tabela Vehicle para False.</comment>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>832ee7dd93aa6a1025f57b732bba100c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:13:14</sys_updated_on>
+        <ui_id>16e8acf4-b6bd-4542-8f22-d7bd8e437898</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTyW7bMBT8lYBnWZAtL7FvRQKf2gRoglzSQHgSH20C1FKScuIa/vc+ipRjOO4SICjQI4dvmRlyHndMcrZgo9lkNgEcTdI8HaVJko6LKeeIQszy4UiMWcQqKJEqLeQKs+4QsQ2o1oG7HfUKTObzwXQ05IOxSOaDuRjiIMUUExzi+JKL+N717vfUyKVpFGwfQj8hxVoqrrFii8eniDWgaYNFzRa7k6u/5asgR0Wl3dKLG0/4nAi7bc5in88NqDV3pJKI4YvFiiOxEaAMRqyEioOt9ZYtrG4J0Aj8tlLbQ8VaVtarLeHFyB+09jJxdQJJXhGcOByz4JKHxTVYuKPJhW31wbRaFmi8MRwFtMpeHWO+4Laxsq58SyczdNeqLasbbwk7DDh6lNYQCWycTsc8yBB36/r5a89yKavOknCp6gLU4QTWapm31vHZsVben/Hao73bzjoCUWFJO7MSmkZWq6zR9UZ2e4h2Ga8UHWKh6mfiZ+SqiqFwGmN6AYiXhF938ANo6XZ9oTHUvI+Y2ZorBca8yia/s++tI+1NCHIz75hrKbRs7CdasMGgbB/1wcl/+xHh9c8JiYqbo9DABiRR+9ZSF++mvg3G2Zp3RuXPDPuoLHuKp5T7iGBJ5CxmXsJJTMLlxUO4DFEZflRUppMk+Z/S4pV9QFhOXf+HgaFljUFtM1/dr3t/jo4S/4tEPf0EEE8E8YwGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment>Procura o registro de Veiculo com o mesmo Sys ID que o registro de Booking ( cria uma pill)</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>8b2ee7dd93aa6a1025f57b732bba100b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:13:14</sys_updated_on>
+        <ui_id>ae2fe099-621d-4f09-9f1e-3e3e0e1e48df</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GeKZcQINC3Uyuklfa20rbXl72V5dhOsdbYWcehpYj/fuM4CRFQIDoqtbpHj8f2NzPfN3byY+1z6l/7dBpM0+l0NImDIIqCYDyOCA6TJBqTJEjw0O/5Ei8YeBqcCAbDJRaFHb+gMJ4OhtEYJUr9QhgRtGRzTkonyvNM4NVj5fvYTJA5F1Qz6V//+NnzM6xhc8O0f73emToXncAJE+D6UMHbQWtWWTNE5ZyzfW0v8765CaWphRL0fPZimKQMMKRY5KznL7Ck2Ci9aiyaYXonxdYw59LAjr51fsn5K5w7CaxfyiAqwtxcM0RVjpw5vcUG3xtdEFPoypXMFScsd/mgLMWFMDdtm3O4ywxX0i1xYbvVShQL+c2lw282qEsCliIHECyzgVrkVRjp/Vw9f69Rzrgsc1JNCkWwaEbYGM2Twlg8a58JtoCN0AJnGZdPKNNqycvFgGXRfxIw6KdCPcOhOX+SfUws8D7kFfdnYL8tzY9YcxvFX7ANLAZAXABDkCthrgpdpnKJiCjyckJjmbu9/E3Pz1f5jcB5vo0cUo5+Fxa3y0MVMXJJs0uI5pn5E7ZYsiq4Ta8WyOgoBadbyhElKbco8pZKAA3i9J8CFtP1+gZIYxhFYZ8UGvJr+m5+s9nXTIeVHUV1OqJaVDftkA6FWclrz/b10AaVvMKLyWsYBJ9JYHD4x9NXd8W4FJyQTUiPkoxu+ZQrbZDLZUs3+3rozPMzINQ8v7PM9JLVW6gqmqecCXroFpnZiZ1bZPD/vEU+JMkBEEWuelwKLssnAQB9L/aPjlIvCXd4VtKrdWdYG87JvgawZ5T32lkJZ8CplXAPZ3sPDs8BiHW/Lymz2+trYyWA6GICiAaXEcC6CbNJ5IGc169AW83a/9X6411/oGBrQbg5JLBOZ4Zdzxxs9gUcdVJwm2xu5vYNzl34ufiGInvv2QLmsLQ6Dzn9omdOn5jZnl57UWWesfh1aL5iHKoLVYb3Dk/P8OjXT9J6evIULaByPIMXsmYEyJEjrBlKVSEpqt7GWyLZSqZc56Zy3m803xnoR3oKhOmZOfNKb6/x7ngRn46jTuWX1KsDqU7LPQjEKwPxmkC6hd2laQ0v+Di9dNOaYS7KasBnT9YqJ9Na6Tca14lCHmHEmV3tTFDhRUH997Z3SAIH298JrJ/iG/ryrYkwnAwHeBxHYRgEYUDjYBLH4WScpGMcD9OtRhHKJYFuCjunQBXYHtXUqOsc7Pcf11K7NpozUNUUvFXSfloPYuNZWFBfr4Z1GnjVUBKlBMNyp6M8wD3xx6zCX/F19OG6yqf4o1Twh91MO9PBXL/Xu6Hgf0v+u2BfLMUmLBhMQkquJnEYXw1TOr6aUjy6wtNkFEeUkWF6yafAz38Bbno6mKgVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>75d7c820-a4e5-461b-af9d-41fb52b5578c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>ba2ee7dd93aa6a1025f57b732bba1008</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:13:14</sys_updated_on>
+        <ui_id>d9cdbb68-8667-46c4-b085-345395faeb4f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhO04y8jZQ8bS2sJS9dMdfWdSKQZU+S03oh/31XluyELPsolMEedXSu7jnHPk97JjhbsHQ+m88A09k0n6bTJJleFzecI5blPJ+k5TWLmIIKiWkhl5j1h4jtQLYO3O+XGsEizybxkXA4EIUL00jo1oFJSLEVkmtUbPH0HLEGNFEtarbYn139rTIJOUqiPrrNV3de2iW5tmsuYp8uPVBr7kQlEcNXi4ojqSlBGoxYBYqDrXXHFla3BJB5fq9kNzK2QlnvtoJXI77T2g+J45VI9oqQxHjMQkoeLm/BwgO9XNhWj6HVokDjg+FYQivt8hTzhPvGilr5kd5mmK5lW6k7HwkbHzj5KK0hEdg4n055sFE+bOuXL4PKlVB9JOFS1gXI8QTWapG31unZs1Y8Xsjao0PaLjoCUWJFO7MKmkaoTdboeif6PSS7ijeSDnEp6xfSZ8RGxVA4jzF9AYhXhN/28Bq0cLs+0zM0fIiY6cxSgjFH25R39q11on0IwW7mE3MjhRaN/UgLdhicHaKhIvlvf0Q4/nOlQMnNST2MpW58bWmGpz9X4uz2jfX4s6qhHqtB1rnMoRZYkSyLmZd9Vo1webUOl6Eek/eqx80sSf6nhnhn71CQ89T/YUloWWNQ28yzh3Vv785Jy3/RoucfGsgobGoGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment>Aguarda a confirmação de entrega do Veiculo</comment>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>c32ee7dd93aa6a1025f57b732bba100d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:13:14</sys_updated_on>
+        <ui_id>683e4984-c8f8-4e52-8c91-c48904908114</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2X227jNhCGX2Wha9MVJUqmcre1EzRAugEcd3uxXQgUOYyJ0pJXh2zcIO9eSqIt+RBv0nUCBOidOTzon5/zeaQvD44SzplDIg6UEUxH2HNd7IahzxlOEj/kiZsAcQZOyhZgVubAs1yY8R3TVR14eBjnwEoQMR7yKs8hLR8fzbxQxVKz1We7zET4XGlh5p2zL18HzpLl5sQScufsYWfquZI0S0CbpdO1pl2N5WpZj0XGq4XRFat18MrunNiZD5cTM2M21XLwwIH7ElIBRodkuoCBs2CpYGWWr5yzMq9MwOQsrlO92qyYq7Rs81yw+0L9Yx7se/U6CSYxbj3YDGPrTxuWE1ayG3MyL6t8Y1emOBStJQIkq3Q57sfaBdfLUmVpu6VkiV7vznS1SD+1hjibA3rXURVGBCzrPGvlbVryZp59n65FXqi0ccSmqDPO9GbEyjJXSVXWch6cSs0Omd2GD9stlTbXHzei4yKr8sak6fn4ejqJ//w4G/92Po2n5zez6eV4dl7vAA3N0Qu2XKr0Nl7m2Z1qFJp8F8NbbQZDqbPvJrFC3aZDxmtzhubq2PDCxCdN+DPLVf3Q380xZnOt8o9Ufavgsik8KbGPwxBh7PqI4CREEYUAuRAwEngkDELPeRw4xaoYa1YUncfmcuNvVW1R67j1Nm6up02zqdB6M8/Vsvxo5N2BdfRxsIYxOFr5rCv03pkdkPcxHkUe8cM4ybK/Yxbz5ofxa5/KXzcTL4TzxxLXcM6amjws2fK5F7vq7/3wqZ2wdHrH6bSRDs+2rg/QSd13RKdN6+fx3PJ6m84tt1URtzVqRTenvhWCHqYRJYmP/IQEiERSIupSgggwlweeGBHM/wOCPwTveMuRXRXzLBWqzqvogSdAm0NzEH9VruuLuvD2iTu86KStUfboG/eFHhJvEdyLXR06wCLon6pBEtd9TxCeqkVumb3N4Jbdb8IaCBomgUsRSEoR8UcURdjzUBgygTHhQrqv2+5ccayaZe/ds1QLyKoylprd9rhz9ylb/1u9jKtnKFlzdZ42f5ZW0ZMSLV2m/2pg6W53M+X0y4VVatEiL+xux9h6R2SdrL11Tu/0tr7Xb8IV54yaZsVQ5HNAJEw4opJL5EMSSD9IaDJyX6GH8eM1HO2Xqqhy1txiR9QJPt+eoWPN0qQT8LQ0S1JzN7vxq/2DLE7B/zj9FE57du98z3UTr8XU3OybsFVRV0X7rrRDGWA2CpL6E40h4kUYsYh4KAphBETS0GfRK1BG8dHqlvulXPA5iErDaSl7ho41ZTedgKelWcq6Qt8GbNqLW8LCkxFG914G+SLtizvEWy+rd8mdvAGW8/mFAl3fp/0ue4LG/rVsg9i/mLfpbp6HfQEcYWFeHYkXeoj6ZIRGEU1cYkov8eGE3H39F8N/ElqpFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>c32ee7dd93aa6a1025f57b732bba100e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:13:14</sys_updated_on>
+        <ui_id>81bf03b8-bec3-46b5-848e-57cbc659a227</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTy27bMBD8lYBnWZAtP2LfigQ+tQnQBL6kgbASlzYB6lGScuIa/vcuRcoxDPcRICjQI4c73JmR5mnPJGcLNppNZhPA0STN01GaJOm4mHKOKMQsH47EmEWsghJp0kKuMOsOEduCah243xNXYDKfD6ajIR+MRTIfzMUQBymmmOAQx9dcxI+OezgQkUvTKNitAp+QYiMV11ixxdNzxBrQtMGiZov92dXf6lWQo6LRbunVnRd8yYTdNRexz5ceqDV3opKI4avFiiOpEaAMRqyEioOt9Y4trG4J0Aj8vlK748RGVta7LeHVyB+09jpxcwLJXhGSOB6zkJKHxS1YeKCXC9vqY2i1LND4YDgKaJW9OcX8wH1jZV15SmczsGvVltWdj4QdHzj5KK0hEdg4n055sCEeNvXL117lUlZdJOFS1QWo4wms1TJvrdOzZ618vJC1R/u0XXQEosKSdmYlNI2s1lmj663s9pDsMl4rOsRC1S+kz8h1FUPhPMb0BSBeEn7bwSvQ0u36Qs8Q+RAxszM3Cox5s015Z99bJ9qHEOxmPjFHKbRs7CdasMXg7BD1xcl/+yPC2z8nJCpuTkoDW5Ak7VtLLB5sn/Xi0sg7i/JnfX1Rlr3Ac8F9QbAkbRYzb+CsJOHyahUuQ1GGH1WU6SRJ/qeueGcfUJXz1P9hXWhZY1DbzE/3697fopO+/6JPzz8BBN9fMIoGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment>Assim que condição (Delivery é true), Altera o status do Booking para 'Done'</comment>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>cb2ee7dd93aa6a1025f57b732bba100d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:13:14</sys_updated_on>
+        <ui_id>0d5deb41-c0a3-4748-a0b9-44f9c29f2717</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhJ04y8jZQ8bS2sJS9dMdfWVSKQZU+S02Yh/31XlpwEL/solMEedXSu7jnHPk97Jjmbs/FsOpsCjqeTYjKeZNnkurzhHFGIWTEai2uWMA0VEtNBoTDvDgnbgmo9uN8vDIJDno/SE+FwIAqXtlGwW0UmIeVGKm5Qs/nTc8IaMER1aNh8P7j6W2UKClREffSbr+6CtEty3a65iH269EBtuBeVJQxfHWqOpEaAspiwCjQHV5sdmzvTEkDm+b1WuyNjI7ULbit4tfI7rf2QeZ5AslfGJI7HPKYUYHELDh7o5dK15hhaLUu0IRiOAlrlFudYINw3TtY6jHQ243St2krfhUjY8YGzj9JaEoGN9+mVRxviYVO/fOlVLqXuIomXqi5BHU/gnJFF67yePWvl44WsA9qn7aMjEBVWtDOvoGmkXueNqbey20Oyq3St6JAKVb+QPivXOoXSe0zpC0C6JPy2g1dgpN/1mZ6h4UPC7M4uFFh7sk15599aLzqEEO3mITE/UhrZuI+0YIvR2SHpK1L89keE0z8nJCpuz+phHXXja0szfPJzJQa3b6zHn1X19Vj2soYy+1pgRbIc5kH2oBrx8moVL2M9Ru9Vj5tplv1PDQnO3qEgw9T/YUloWWPRuDyw+3Vv785Zy3/Roucf6j8wgGoGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=5960fc95932e2a1025f57b732bba103c"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=5960fc95932e2a1025f57b732bba103c^sys_idNOT IN072ee7dd93aa6a1025f57b732bba1009,0f2ee7dd93aa6a1025f57b732bba1009,4f2ee7dd93aa6a1025f57b732bba100e,b22ee7dd93aa6a1025f57b732bba1007"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">432ee7dd93aa6a1025f57b732bba1009</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>75d7c820-a4e5-461b-af9d-41fb52b5578c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>072ee7dd93aa6a1025f57b732bba1009</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:57</sys_updated_on>
+        <ui_id>00259136-a56a-41f5-8e46-573b2ebabde6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">4b2ee7dd93aa6a1025f57b732bba1009</block>
+        <comment/>
+        <connected_to>75d7c820-a4e5-461b-af9d-41fb52b5578c</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>0f2ee7dd93aa6a1025f57b732bba1009</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:57</sys_updated_on>
+        <ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTY/TMBD9KyjnNErSr21vFWglJGAldrUXWEUTe9JaOLaxnXZL1f/OOB/dClqBEOLELX7jefPeeCaHSDfeNN496JVzYq2i5aenOBIqYPR9iBTUGC0jphUXXmhVtEAcbUE2IbAyxli9RU4YF85I2D9eCLGNkNxiz2/AEotHGy0PP4T83mAhoURJDPfeCrWmdMHpVKVQZQuWsXE+G+dpmt9MsnI2LrOcjwEhp3tD4utB7qt3LRJf9RHqEe6GStryICtL4wifPSpO8pcVSIdxVIPi4LXdnxCLwO+UfAE2Qnmii8LlZye+EXc+nYaLFZJHhl3wdCz6nnUw22jB8M4EgR3ioZR9DtOyqdWHzkfoNlbQSD90m5DGER+aIDqo6CVV9xu9+zgUvBWqNdgHpWYgTyfw1Iay8ejCw6DEmoiKGoyh5hThMUWbTFrqZC3pkFRS76homJ0EWBCeUI8guSX8TQs/ghXBxXuioeROZglOsKKdM6Lzliwc27YUX5sgqDPYWym6btAFx6wwfkV1ttirPsY/D+nZfB4OfFFOp/NFOprihI0mi7Ic3SDPRtNsks1LxuezWZlAO6ogC+fB4/H4uUnTMYers/23aP/BXmSX9uLCRlxfhvwXyxCe7zd3IU3T/8twvgzCFd1Q997a4n+8C09h8LsKrpsbjkw4EvIQsLfDfz0E9jQAgp1DO22/BAsv2PE7n6HjcSEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">8b2ee7dd93aa6a1025f57b732bba100e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>4f2ee7dd93aa6a1025f57b732bba100e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:57</sys_updated_on>
+        <ui_id>cace8438-ae91-4a72-b6f0-c79041f6a5dd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">f62ee7dd93aa6a1025f57b732bba1006</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>b22ee7dd93aa6a1025f57b732bba1007</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:56</sys_updated_on>
+        <ui_id>75d7c820-a4e5-461b-af9d-41fb52b5578c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4PPjuGPOGlyKzYUGLCtQFv0shUGLdGJNlnyJDlpFuS/j/JHGrQpNgw97mY9iuR71KP3gW5d0zp7py+tFSsVLL8+hIFQHqPvfaCgxmAZMK24cEKrogPCYAOy9YEbbIzeICeIC9tI2N2/jLC1kNzgUL0BQzUcmmC5fxZyuwYLCSVKKnDrjFArShecTlUMVbJgCcvSWZbGcXoxTcpZViYpzwAho3tj4vuR7LtPHRK+qsL3I9yOnbThnlYShwE+OlSc6C8rkBbDoAbFwWmzOyIGgV8r+QSshXJULvCXH634RbXTPPcXKySNDPvg8VgMI+thttaC4XXjCfaIg1IOOUzLtlZfeh1+2FhBK904bEJaS/Ww8aQ9i4FSdbvW25ux4ZVQncAhKDUDeTyBozGUrUPrHwYl1lSoqKFpaDiFf0zRJROXOlpJOkSV1Ftq6p0TAfPEI5oRRFeEf+jgezDCq/hMZSi5p1mCFazoXEblnCEJh24sxc/WE+oFDlKKfhp0wTIjGndJfTY4sD6ELy164s79ni/KPJ8v4kmOUzaZLspycoE8meTJNJmXjM9nszIibqQOZGEdODwcvrVxnJErvyNz56z9VmXfYi8WkFd5Eufn92I6O7cXZzbi9WVI/7AM/vn+chfiOP6/DKfLIGzRm3rQ1jX/51148MbvO9jeNxyZsETkzmMfx7+6D+zIAIKdQlttfngJT9jhN+swn+kfBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=5960fc95932e2a1025f57b732bba103c"/>
+    <sys_hub_flow_variable action="DELETE" query="model=5960fc95932e2a1025f57b732bba103c"/>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5960fc95932e2a1025f57b732bba103c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>3e2ea7dd93aa6a1025f57b732bba10dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 17:59:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5960fc95932e2a1025f57b732bba103c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:59:57</sys_created_on>
+        <sys_id>be2ea7dd93aa6a1025f57b732bba10e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 17:59:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_5960fc95932e2a1025f57b732bba103c"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_5960fc95932e2a1025f57b732bba103c"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>book_a_car</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Booking Record","reference":"x_1792436_book_a_c_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"d9b55790-5e4c-49bb-8ed1-51417bcd766b":["record"],"683e4984-c8f8-4e52-8c91-c48904908114":["record"]},"attributes":{}},{"name":"{{static.a1fe120d93222a1025f57b732bba10ef}}","label":"Booking - Gestores","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"d9b55790-5e4c-49bb-8ed1-51417bcd766b":["approval_conditions"]}},{"name":"d9b55790-5e4c-49bb-8ed1-51417bcd766b.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"75d7c820-a4e5-461b-af9d-41fb52b5578c":["condition"],"90c1a182-d187-47ad-aacf-7505fdbefb6e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Booking Table","reference":"x_1792436_book_a_c_booking","reference_display":"Booking","type":"table_name","base_type":"table_name","usedInstances":{"d9cdbb68-8667-46c4-b085-345395faeb4f":["table_name"],"b2f12d91-a205-4f37-a97a-c5bab4a446d6":["table_name"],"09639896-f46a-4227-a889-38f9a4ac34f3":["table_name"],"0d5deb41-c0a3-4748-a0b9-44f9c29f2717":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Booking Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1792436_book_a_c_booking","column_name":"sys_id","usedInstances":{"ae2fe099-621d-4f09-9f1e-3e3e0e1e48df":["conditions"]}},{"name":"ae2fe099-621d-4f09-9f1e-3e3e0e1e48df.Table","label":"7 - Look Up Record➛Vehicle Table","reference":"x_1792436_book_a_c_vehicle","reference_display":"Vehicle","type":"table_name","base_type":"table_name","usedInstances":{"16e8acf4-b6bd-4542-8f22-d7bd8e437898":["table_name"],"81bf03b8-bec3-46b5-848e-57cbc659a227":["table_name"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}}]</label_cache>
+        <master>true</master>
+        <name>Book a car</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Book a car">5960fc95932e2a1025f57b732bba103c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>553e2bdd93aa6a1025f57b732bba1095</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:59</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=553e2bdd93aa6a1025f57b732bba1095"/>
+    <sys_variable_value action="DELETE" query="document_key=553e2bdd93aa6a1025f57b732bba1095"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=553e2bdd93aa6a1025f57b732bba1095"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=553e2bdd93aa6a1025f57b732bba1095^sys_idNOT INd13e2bdd93aa6a1025f57b732bba1096"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>553e2bdd93aa6a1025f57b732bba1095</id>
+        <name>Book a car</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>d13e2bdd93aa6a1025f57b732bba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=d13e2bdd93aa6a1025f57b732bba1096"/>
+    <sys_hub_flow_input action="DELETE" query="model=553e2bdd93aa6a1025f57b732bba1095^sys_idNOT IN953e2bdd93aa6a1025f57b732bba1097,d93e2bdd93aa6a1025f57b732bba10a5"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</model>
+        <model_id>553e2bdd93aa6a1025f57b732bba1095</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_553e2bdd93aa6a1025f57b732bba1095</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>953e2bdd93aa6a1025f57b732bba1097</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=953e2bdd93aa6a1025f57b732bba1097"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</model>
+        <model_id>553e2bdd93aa6a1025f57b732bba1095</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_553e2bdd93aa6a1025f57b732bba1095</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>d93e2bdd93aa6a1025f57b732bba10a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=d93e2bdd93aa6a1025f57b732bba10a5"/>
+    <sys_hub_flow_output action="DELETE" query="model=553e2bdd93aa6a1025f57b732bba1095"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=553e2bdd93aa6a1025f57b732bba1095"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=553e2bdd93aa6a1025f57b732bba1095^sys_idNOT IN253e2bdd93aa6a1025f57b732bba10b9"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>253e2bdd93aa6a1025f57b732bba10b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY2W7jNhT9FUFPLeACWrzEeZtxMmiA6QS1Pe1DkAqURNrE0KQrUUo8g/x7L7VZ1uIlVqbOSxCR1L2HR+eeS/rhh86Qi5l+rc+Ry7De0ymXOOCIzTdrDMNSDTscrdTcCnEfSRFs9GsZRLink0Cs5ni1ZkjCYoJYCIMi8HGgX5s9PUYswrNNeOdDJHg/CZPF1LNpeH52zNHY6ttDxxXim4McL/mH8gUs8mkI4Td/ZWs/FhPekjI/wFy/fnjs6WsUQHCpEv+oTFGV3SMeGlvY8GzTtizDsK76pju0XdPybYQNAwJWmaiglQ2EbLeKnyXmPvYLFmpcBRj595xtihVLoDrlZYWeQ/odol8Zah3BgN3D6Vzx6GRMpMPeUlAP368lFTwdSXGmk4JFK/4lxa84xARFTOYcwkgUQjy8VpAViAwRmS3F0zRP+InyZHfZJBMeYsUTkjKgbiRxqAgnlAH1TspNKKIgQT+9ndxPb5y/P8wnv99OnentbD69m8xvb/SXZF/Ov5GKmCLMsDjpdl6KD/+JYqY+II9WLqDp6aEX0LX84Eka55p76W11PBHcpwkrNS17+VS4q+V89/vEbBitcvZKGXNJ/3P7Z1276eBpuh0OEfIxatGtS0q6Le+8AZpsIKG8u30KzkaOkXDfMP4nEWeW9FoNr4SP2c02nA6TiwWomvJ1JBVbT4jL0JHCQb7vlHhUSwHTIVGne3s5qOAg4vCCU3yPuo4T2gr+PtMQ4D5AFebcJCFhnnzOQk4jrgn4cPBH86IAqJFa7mvkboUWGaNkhhn2ZEkE5GtYfvqDhqGy3y3qImnCQS1nkQ7EpOVbSnOHZyZ/7LKI66THFTIrxXxyJZsmIS4mljFSdWwatktMY2QMEPFtw/CsUiXXwbSilBVJvElFn1bPYSJGdoT0qhRn4I1yNRwlo3hXgzkJSiKZbUy6gWZ2BM1S0Cr2Z5/kf4Us0+GbXXXu21rHvR/5MYI3/GNt8EgHJEw8gfW+wv1c5H1bBCLiftWOVEyNcm27Qvsl4+/XDp2QiADvB7C74pI8cEt7LlzENx24n01Md4z72ADTs8Hv3MF47HrIImQ0HGHLrLjfFkYjtnfhegfUFjfJtc0BG4UTN+ntBO87A2DNB08GeL4DZsJs9L907n043dMScwegBg5TXlYzvAWjPs7nuq32Wup4W9/nVjy5GnsDczTyRnBrgYonfewis28N0Hg0tK8GlYqvQdkHUzYw81PuMuEmTIC0uMHXdOqyLudvKdsQS5n+HHNql+Zwjk3eQWmSUqdUn0VLTEUE2hfBf7vbrtNmGBpgcqHtql0fg0J9WO1tYbhCLmvnBUj9EcZ3UqtzZgsrF3elqogk3t3r2Vcq3L8ajIndbDFk3GQxWzDtMC/+eHFkhcSttdZ0zjhW8HFj3bQeDF4h4YpMyieGPUearkgxOyfFejtS7LOPUXkttt4jXwP2HbWw5FxxTh9TObEjSNm8b4QGExok0SjRsl8Ssa+5G00uMVDK4LwMCTWV/VzXLneROpRCwT8XSHoCr3UzGNayA9TlNaqKFLq9AWN/hAYDu+U8PK7egJsAHcB78W3r5KqIm4psb+86LW41ZmP3Kkl2VxFH9qVOd93cnM7bdWN7OrTr8xvPvvt7A4oLbSmP/wGIVdPzRB8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=553e2bdd93aa6a1025f57b732bba1095^sys_idNOT IN553e2bdd93aa6a1025f57b732bba10b6,5d3e2bdd93aa6a1025f57b732bba10b6,9d3e2bdd93aa6a1025f57b732bba10b3,a53e2bdd93aa6a1025f57b732bba10b8,ad3e2bdd93aa6a1025f57b732bba10b7,ad3e2bdd93aa6a1025f57b732bba10b8,d13e2bdd93aa6a1025f57b732bba10b5,d93e2bdd93aa6a1025f57b732bba10b4"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment>Procura o registro de Veiculo com o mesmo Sys ID que o registro de Booking ( cria uma pill)</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>553e2bdd93aa6a1025f57b732bba10b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <ui_id>ae2fe099-621d-4f09-9f1e-3e3e0e1e48df</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GeKZcQINC3Uyuklfa20rbXl72V5dhOsdbYWcehpYj/fuM4CRFQIDoqtbpHj8f2NzPfN3byY+1z6l/7dBpM0+l0NImDIIqCYDyOCA6TJBqTJEjw0O/5Ei8YeBqcCAbDJRaFHb+gMJ4OhtEYJUr9QhgRtGRzTkonyvNM4NVj5fvYTJA5F1Qz6V//+NnzM6xhc8O0f73emToXncAJE+D6UMHbQWtWWTNE5ZyzfW0v8765CaWphRL0fPZimKQMMKRY5KznL7Ck2Ci9aiyaYXonxdYw59LAjr51fsn5K5w7CaxfyiAqwtxcM0RVjpw5vcUG3xtdEFPoypXMFScsd/mgLMWFMDdtm3O4ywxX0i1xYbvVShQL+c2lw282qEsCliIHECyzgVrkVRjp/Vw9f69Rzrgsc1JNCkWwaEbYGM2Twlg8a58JtoCN0AJnGZdPKNNqycvFgGXRfxIw6KdCPcOhOX+SfUws8D7kFfdnYL8tzY9YcxvFX7ANLAZAXABDkCthrgpdpnKJiCjyckJjmbu9/E3Pz1f5jcB5vo0cUo5+Fxa3y0MVMXJJs0uI5pn5E7ZYsiq4Ta8WyOgoBadbyhElKbco8pZKAA3i9J8CFtP1+gZIYxhFYZ8UGvJr+m5+s9nXTIeVHUV1OqJaVDftkA6FWclrz/b10AaVvMKLyWsYBJ9JYHD4x9NXd8W4FJyQTUiPkoxu+ZQrbZDLZUs3+3rozPMzINQ8v7PM9JLVW6gqmqecCXroFpnZiZ1bZPD/vEU+JMkBEEWuelwKLssnAQB9L/aPjlIvCXd4VtKrdWdYG87JvgawZ5T32lkJZ8CplXAPZ3sPDs8BiHW/Lymz2+trYyWA6GICiAaXEcC6CbNJ5IGc169AW83a/9X6411/oGBrQbg5JLBOZ4Zdzxxs9gUcdVJwm2xu5vYNzl34ufiGInvv2QLmsLQ6Dzn9omdOn5jZnl57UWWesfh1aL5iHKoLVYb3Dk/P8OjXT9J6evIULaByPIMXsmYEyJEjrBlKVSEpqt7GWyLZSqZc56Zy3m803xnoR3oKhOmZOfNKb6/x7ngRn46jTuWX1KsDqU7LPQjEKwPxmkC6hd2laQ0v+Di9dNOaYS7KasBnT9YqJ9Na6Tca14lCHmHEmV3tTFDhRUH997Z3SAIH298JrJ/iG/ryrYkwnAwHeBxHYRgEYUDjYBLH4WScpGMcD9OtRhHKJYFuCjunQBXYHtXUqOsc7Pcf11K7NpozUNUUvFXSfloPYuNZWFBfr4Z1GnjVUBKlBMNyp6M8wD3xx6zCX/F19OG6yqf4o1Twh91MO9PBXL/Xu6Hgf0v+u2BfLMUmLBhMQkquJnEYXw1TOr6aUjy6wtNkFEeUkWF6yafAz38Bbno6mKgVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment>Atualiza o campo Avaible do campo da Tabela Vehicle para False.</comment>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>5d3e2bdd93aa6a1025f57b732bba10b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <ui_id>16e8acf4-b6bd-4542-8f22-d7bd8e437898</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTyW7bMBT8lYBnWZAtL7FvRQKf2gRoglzSQHgSH20C1FKScuIa/vc+ipRjOO4SICjQI4dvmRlyHndMcrZgo9lkNgEcTdI8HaVJko6LKeeIQszy4UiMWcQqKJEqLeQKs+4QsQ2o1oG7HfUKTObzwXQ05IOxSOaDuRjiIMUUExzi+JKL+N717vfUyKVpFGwfQj8hxVoqrrFii8eniDWgaYNFzRa7k6u/5asgR0Wl3dKLG0/4nAi7bc5in88NqDV3pJKI4YvFiiOxEaAMRqyEioOt9ZYtrG4J0Aj8tlLbQ8VaVtarLeHFyB+09jJxdQJJXhGcOByz4JKHxTVYuKPJhW31wbRaFmi8MRwFtMpeHWO+4Laxsq58SyczdNeqLasbbwk7DDh6lNYQCWycTsc8yBB36/r5a89yKavOknCp6gLU4QTWapm31vHZsVben/Hao73bzjoCUWFJO7MSmkZWq6zR9UZ2e4h2Ga8UHWKh6mfiZ+SqiqFwGmN6AYiXhF938ANo6XZ9oTHUvI+Y2ZorBca8yia/s++tI+1NCHIz75hrKbRs7CdasMGgbB/1wcl/+xHh9c8JiYqbo9DABiRR+9ZSF++mvg3G2Zp3RuXPDPuoLHuKp5T7iGBJ5CxmXsJJTMLlxUO4DFEZflRUppMk+Z/S4pV9QFhOXf+HgaFljUFtM1/dr3t/jo4S/4tEPf0EEE8E8YwGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>9d3e2bdd93aa6a1025f57b732bba10b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <ui_id>d9b55790-5e4c-49bb-8ed1-51417bcd766b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Yy3LbNhT9FQ/WsgqSIkVp51rjTjptMmO72VgeDgiAFlqKVAjQscrRv/cSAB+RbEVKlIXrbDzGfQDnXp6Dh+4qJBiaonGYuHwycXHsYOxhHPoUhx6PvXEw9gjFaIAysuQQWXCaFwzGjyQta0NVXRacKM4iZ0jLouCZ2mzAz4RcpWT90YaBhS5EysCPpnf3A7QiBcyoeIGm1ZbrUEgpiXkKodcNpm2Mar2qxyyn5RJwRaIx/mEzZ9Zz9m4GHkiq4eAB4k+KZ4wDjoSkkg/QkmSMqLxYo6kqSjBAzexDlq7biIXIlKlzSZ6k+BcW9tw6LuFQGLU9aIeR7Y8xJzOiyA3MTFVZtO3KBeXStITxhJSpuuzbTMCHlRJ5ZlIUidMmO0/LZfbeNAS1E/Q+RykBBF/VddbITVnJzSL/fN2AvBKZ7ogtMc0pSdsRUaoQcalqOBXiKdctXpLVSmQP0arIH4VOBijL4UMKg2GS5p9hTSkesiGhNe4hdJUMr8A+0+aPpBB1EX/CNJC8GSC5lpcpkbIrBXoYfSprJKYwW0Kku2BaUOfRQqzUBazyyC3mzcDSPaZ7uUU7KpnpOrY/Rc544o68IIrz/J+IRFT/AxXvUv7X1nEc8w9A1zD/1sLbQmt5r4eR9n1Je5129t44LOud/ay3lo72hi/PsD7Er4j1tqxXT/uvMZ6PAs+HP+PEw47r4JAHYUgnmNAwCPyR13EIEEANJI3gU0uYu+P+CTb1A2A01L6wOM6uGxwvArR0l/BhtNz6VL9pjJbm7pE0f3l3d4K3RPRS3G512Vh2+vxjFFEv91cmPpX8Xc2jwI2DCQ7ZOUtwfD4KPf+cUI7PeeD43GcB9R3vB6gIO/t2ZhY+Q9JE8LR/XWocu2LqeY4T1QGodkR1ZWG9BNdKSg+fO0F0/tYJcjpphRi/Jm29pasT3Us23jtI/s7LItujgGghpGbGi0roRRyniANANor43aDcFsQ2+G/Rg/dTD/9/PYz8vVTrXc5bVtM8Y6JGLHuqMDszlxfZ+re7qpKKKEGHxEm442I28VzXJQ52/cQfx2PPjWMY8WSzud+Vz/dMdZzODii+faOXKZdfa4ZVWXfDs0l9pXX3Quu0ahud6tX+ysT2Vl4wdC/XkknHLVZCg4jqP9urOTKw52g6R1me8TkazFEdFdXk0maIAHCtQ9uqarMxlrIgdgKnN+yyGVlLHSnpgjPgprZ+YYm0GKz9FL+RHdCTRn+zkp/NTFN229Q8oBqcpi9i55S7sQF6pl9uRf+080922o1+yu8Uz6WofVDAUQa73wk1ef8fMtyzBTgWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment>Assim que condição (Delivery é true), Altera o status do Booking para 'Done'</comment>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>a53e2bdd93aa6a1025f57b732bba10b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <ui_id>0d5deb41-c0a3-4748-a0b9-44f9c29f2717</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhJ04y8jZQ8bS2sJS9dMdfWVSKQZU+S02Yh/31XlpwEL/solMEedXSu7jnHPk97Jjmbs/FsOpsCjqeTYjKeZNnkurzhHFGIWTEai2uWMA0VEtNBoTDvDgnbgmo9uN8vDIJDno/SE+FwIAqXtlGwW0UmIeVGKm5Qs/nTc8IaMER1aNh8P7j6W2UKClREffSbr+6CtEty3a65iH269EBtuBeVJQxfHWqOpEaAspiwCjQHV5sdmzvTEkDm+b1WuyNjI7ULbit4tfI7rf2QeZ5AslfGJI7HPKYUYHELDh7o5dK15hhaLUu0IRiOAlrlFudYINw3TtY6jHQ243St2krfhUjY8YGzj9JaEoGN9+mVRxviYVO/fOlVLqXuIomXqi5BHU/gnJFF67yePWvl44WsA9qn7aMjEBVWtDOvoGmkXueNqbey20Oyq3St6JAKVb+QPivXOoXSe0zpC0C6JPy2g1dgpN/1mZ6h4UPC7M4uFFh7sk15599aLzqEEO3mITE/UhrZuI+0YIvR2SHpK1L89keE0z8nJCpuz+phHXXja0szfPJzJQa3b6zHn1X19Vj2soYy+1pgRbIc5kH2oBrx8moVL2M9Ru9Vj5tplv1PDQnO3qEgw9T/YUloWWPRuDyw+3Vv785Zy3/Roucf6j8wgGoGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment>Aguarda a confirmação de entrega do Veiculo</comment>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>ad3e2bdd93aa6a1025f57b732bba10b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <ui_id>683e4984-c8f8-4e52-8c91-c48904908114</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2X227jNhCGX2Wha9MVJUqmcre1EzRAugEcd3uxXQgUOYyJ0pJXh2zcIO9eSqIt+RBv0nUCBOidOTzon5/zeaQvD44SzplDIg6UEUxH2HNd7IahzxlOEj/kiZsAcQZOyhZgVubAs1yY8R3TVR14eBjnwEoQMR7yKs8hLR8fzbxQxVKz1We7zET4XGlh5p2zL18HzpLl5sQScufsYWfquZI0S0CbpdO1pl2N5WpZj0XGq4XRFat18MrunNiZD5cTM2M21XLwwIH7ElIBRodkuoCBs2CpYGWWr5yzMq9MwOQsrlO92qyYq7Rs81yw+0L9Yx7se/U6CSYxbj3YDGPrTxuWE1ayG3MyL6t8Y1emOBStJQIkq3Q57sfaBdfLUmVpu6VkiV7vznS1SD+1hjibA3rXURVGBCzrPGvlbVryZp59n65FXqi0ccSmqDPO9GbEyjJXSVXWch6cSs0Omd2GD9stlTbXHzei4yKr8sak6fn4ejqJ//w4G/92Po2n5zez6eV4dl7vAA3N0Qu2XKr0Nl7m2Z1qFJp8F8NbbQZDqbPvJrFC3aZDxmtzhubq2PDCxCdN+DPLVf3Q380xZnOt8o9Ufavgsik8KbGPwxBh7PqI4CREEYUAuRAwEngkDELPeRw4xaoYa1YUncfmcuNvVW1R67j1Nm6up02zqdB6M8/Vsvxo5N2BdfRxsIYxOFr5rCv03pkdkPcxHkUe8cM4ybK/Yxbz5ofxa5/KXzcTL4TzxxLXcM6amjws2fK5F7vq7/3wqZ2wdHrH6bSRDs+2rg/QSd13RKdN6+fx3PJ6m84tt1URtzVqRTenvhWCHqYRJYmP/IQEiERSIupSgggwlweeGBHM/wOCPwTveMuRXRXzLBWqzqvogSdAm0NzEH9VruuLuvD2iTu86KStUfboG/eFHhJvEdyLXR06wCLon6pBEtd9TxCeqkVumb3N4Jbdb8IaCBomgUsRSEoR8UcURdjzUBgygTHhQrqv2+5ccayaZe/ds1QLyKoylprd9rhz9ylb/1u9jKtnKFlzdZ42f5ZW0ZMSLV2m/2pg6W53M+X0y4VVatEiL+xux9h6R2SdrL11Tu/0tr7Xb8IV54yaZsVQ5HNAJEw4opJL5EMSSD9IaDJyX6GH8eM1HO2Xqqhy1txiR9QJPt+eoWPN0qQT8LQ0S1JzN7vxq/2DLE7B/zj9FE57du98z3UTr8XU3OybsFVRV0X7rrRDGWA2CpL6E40h4kUYsYh4KAphBETS0GfRK1BG8dHqlvulXPA5iErDaSl7ho41ZTedgKelWcq6Qt8GbNqLW8LCkxFG914G+SLtizvEWy+rd8mdvAGW8/mFAl3fp/0ue4LG/rVsg9i/mLfpbp6HfQEcYWFeHYkXeoj6ZIRGEU1cYkov8eGE3H39F8N/ElqpFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>ad3e2bdd93aa6a1025f57b732bba10b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <ui_id>81bf03b8-bec3-46b5-848e-57cbc659a227</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTy27bMBD8lYBnWZAtP2LfigQ+tQnQBL6kgbASlzYB6lGScuIa/vcuRcoxDPcRICjQI4c73JmR5mnPJGcLNppNZhPA0STN01GaJOm4mHKOKMQsH47EmEWsghJp0kKuMOsOEduCah243xNXYDKfD6ajIR+MRTIfzMUQBymmmOAQx9dcxI+OezgQkUvTKNitAp+QYiMV11ixxdNzxBrQtMGiZov92dXf6lWQo6LRbunVnRd8yYTdNRexz5ceqDV3opKI4avFiiOpEaAMRqyEioOt9Y4trG4J0Aj8vlK748RGVta7LeHVyB+09jpxcwLJXhGSOB6zkJKHxS1YeKCXC9vqY2i1LND4YDgKaJW9OcX8wH1jZV15SmczsGvVltWdj4QdHzj5KK0hEdg4n055sCEeNvXL117lUlZdJOFS1QWo4wms1TJvrdOzZ618vJC1R/u0XXQEosKSdmYlNI2s1lmj663s9pDsMl4rOsRC1S+kz8h1FUPhPMb0BSBeEn7bwSvQ0u36Qs8Q+RAxszM3Cox5s015Z99bJ9qHEOxmPjFHKbRs7CdasMXg7BD1xcl/+yPC2z8nJCpuTkoDW5Ak7VtLLB5sn/Xi0sg7i/JnfX1Rlr3Ac8F9QbAkbRYzb+CsJOHyahUuQ1GGH1WU6SRJ/qeueGcfUJXz1P9hXWhZY1DbzE/3697fopO+/6JPzz8BBN9fMIoGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment>Atualiza status do Campo Status do Form Booking para Aprovado</comment>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>d13e2bdd93aa6a1025f57b732bba10b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <ui_id>b2f12d91-a205-4f37-a97a-c5bab4a446d6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhJ04y8jZQ8bS2sJS9dMdfWdSKQZU+S03om/31XkewEL/solMEedXSu7jnHPk8dE5wt2XQxX8wBp/NZNpvOkmR2nd9wjlgUi2wyLa5ZxBSUSEwLmcT0eIjYHmTjwK5baQSLPJ3EJ8LhQBQuTC2h3QQmIflOSK5RseXTc8Rq0ES1qNmyG139rTIJGUqiPrrNV3de2iW5tq0vYp8uPVBp7kQlEcNXi4ojqSlAGoxYCYqDrXTLllY3BJB5fq9kOzB2QlnvtoRXI77T2g+J4xVI9vKQxHBMQ0oeLm7BwgO9nNtGD6FVIkfjg+FYQCPt6hzzhPvaikr5kaPNMF3JplR3PhI2PHD2URpDIrB2Pp3yYKN42FUvX3qVa6GOkYRLWeUghxNYq0XWWKenY414vJC1R/u0XXQEosSSdqYl1LVQ27TW1V4c95DsMt5KOsSFrF5InxFbFUPuPMb0BSBeE357hDeghdv1mZ6h4UPETGtWEow52aa802+NE+1DCHZTn5gbybWo7UdasMfg7BD1Fcl++yPC6Z8rBEpuzuphLHXja0MzfPJzJUa3b6zHn1X19Vj3ssYy+1pgSbIspl72qBrh8moTLkM9Ju9Vj5t5kvxPDfHO3qEg49T/YUloWW1Q29Sz+3Vv785Zy3/RoucfS9Zwg2oGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>75d7c820-a4e5-461b-af9d-41fb52b5578c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>d93e2bdd93aa6a1025f57b732bba10b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <ui_id>d9cdbb68-8667-46c4-b085-345395faeb4f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhO04y8jZQ8bS2sJS9dMdfWdSKQZU+S03oh/31XluyELPsolMEedXSu7jnHPk97JjhbsHQ+m88A09k0n6bTJJleFzecI5blPJ+k5TWLmIIKiWkhl5j1h4jtQLYO3O+XGsEizybxkXA4EIUL00jo1oFJSLEVkmtUbPH0HLEGNFEtarbYn139rTIJOUqiPrrNV3de2iW5tmsuYp8uPVBr7kQlEcNXi4ojqSlBGoxYBYqDrXXHFla3BJB5fq9kNzK2QlnvtoJXI77T2g+J45VI9oqQxHjMQkoeLm/BwgO9XNhWj6HVokDjg+FYQivt8hTzhPvGilr5kd5mmK5lW6k7HwkbHzj5KK0hEdg4n055sFE+bOuXL4PKlVB9JOFS1gXI8QTWapG31unZs1Y8Xsjao0PaLjoCUWJFO7MKmkaoTdboeif6PSS7ijeSDnEp6xfSZ8RGxVA4jzF9AYhXhN/28Bq0cLs+0zM0fIiY6cxSgjFH25R39q11on0IwW7mE3MjhRaN/UgLdhicHaKhIvlvf0Q4/nOlQMnNST2MpW58bWmGpz9X4uz2jfX4s6qhHqtB1rnMoRZYkSyLmZd9Vo1webUOl6Eek/eqx80sSf6nhnhn71CQ89T/YUloWWNQ28yzh3Vv785Jy3/RoucfGsgobGoGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=553e2bdd93aa6a1025f57b732bba1095"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=553e2bdd93aa6a1025f57b732bba1095^sys_idNOT IN553e2bdd93aa6a1025f57b732bba10b0,553e2bdd93aa6a1025f57b732bba10b1,5d3e2bdd93aa6a1025f57b732bba10b2,9d3e2bdd93aa6a1025f57b732bba10b1"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">f62ee7dd93aa6a1025f57b732bba1006</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>553e2bdd93aa6a1025f57b732bba10b0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:59</sys_updated_on>
+        <ui_id>75d7c820-a4e5-461b-af9d-41fb52b5578c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnWdDDsmPfAgcBCqQNkAS5tIGwIimbLUWqJGXHNfzvXephG4mLNmiOvZmz3OXMaAfeEd24unH2QV9aK5aKzL88BUQoj+HvHVFQcTInVCsmnNAqb4GArEE2vnDHa6PXnCHEhK0lbB9fV+hKSGZ4P70GgzMcN2S+e1ESDBvLCMp4RmOaJpM0iaLkYhwXk7SIE5YChxQHSii4xKuLgdaHmxYJfsvXbWuPW2eEWvbnm37K/QBqwzyrOAoIf3ZcMWQ/L0FaHpAKFAOnzfaAGA7sVskjsBLK4TjiLz9b8RMfTLLMXyw5SqS8Kx6Oee9YB5dX4ACpNNQ1pr9KV1pQbjtzGC+hkW5xinUXbmsvtWtxUMihW8umUp87R8hhwPCBEGkskuC1V+qp9zrK+5Xe3A0sr4VqXemLUlOQhxM49K5onOezI1zyCgflFdQ1Opr7BRBtM3KpwqXEQ1hKvcFH/baFQD3xEI2F8BrxqxZ+BCO8ik84Bps7mgVYQfN2M3Ec2sTJPiB2axcSrD2KRHfzH42n2EnuxeWdP76FGlG7S3x5zXsd++D1op/s+G7HZkWWTWfRKONjOhrPimJ0wVk8yuJxPC0om04mRYhsUS/I3DpwfL//2kRRirv9jVN3LiDvNfZt6ZpBVmZxlJ1P13hyLl1ncvXGSCV/iJT/nn+ZqCiK/kfqnyMlbN4FodfWPv6OiXry8enePHhNhUVqDx77OPzD+MIWl0vQU2ijzXcv6ojtfwEsnLClqwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">432ee7dd93aa6a1025f57b732bba1009</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>75d7c820-a4e5-461b-af9d-41fb52b5578c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>553e2bdd93aa6a1025f57b732bba10b1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:59</sys_updated_on>
+        <ui_id>00259136-a56a-41f5-8e46-573b2ebabde6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">8b2ee7dd93aa6a1025f57b732bba100e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>5d3e2bdd93aa6a1025f57b732bba10b2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:59</sys_updated_on>
+        <ui_id>cace8438-ae91-4a72-b6f0-c79041f6a5dd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">4b2ee7dd93aa6a1025f57b732bba1009</block>
+        <comment/>
+        <connected_to>75d7c820-a4e5-461b-af9d-41fb52b5578c</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Book a car">553e2bdd93aa6a1025f57b732bba1095</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>9d3e2bdd93aa6a1025f57b732bba10b1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:10:59</sys_updated_on>
+        <ui_id>90c1a182-d187-47ad-aacf-7505fdbefb6e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXY/aMBD8K5WfQ5QEAgdviNNJla49qXe6l/YUbWwHrDq2GztwNOK/d50PQC2ntiqPfcOz3vXMZEc0RNfO1M4+6aW1Yq3I4vNLQITyGP5uiIKSkwWhWjHhhFZZCwRkC7L2haUxptJbzhBjwhoJ++cLJboRklW8n2+gwimOV2TR/FQSDDuLCIp4TmM6TqbjJIqSm0mcT8d5nLAxcEhwoIScS7y6Goi9u2+R4E3Gbm88bl0l1Lo/3/dTHgdQV8yziqOA8FfHFUP2iwKk5QEpQTFwutofkYoDe1DyBGyEcjiO+MuvVnzHB5M09RcLjhIp74rHY9Zb1sHFLThAKjV1ddVfpRstKLedOYwXUEu3Ose6Cw/GS+1aHORy6NayLtXHzhFyHDB8IURqiyS48Uo99V5H8bjRu08DyzuhWlf6otQU5PEEDr3La+f5NIRLXuKgrARj0NHML4Bom5FLGa4lHsJC6h0+6vctBOqJh2gshHeI37bwM1TCq/iAY7C5o5mDFTRrdxPHoU2cHAJi93YlwdqTSHQ3+1Z7ip3kXlzW+eNbaCWMW+LLW97rOAS/rvrZljcNm+dpOptHo5RP6Ggyz/PRDWfxKI0n8SynbDad5iG0Cw8ysw4cPxy+1FE0ZvBmQq419qrpii+l60Ku/jJSyW8i5b/nHyYqiqL/kfrnSAmbdUHotbWPXzFRLz4+3ZtHr6mwSO3JY++H/xhf2ONyCXoO7XT11Ys6YYcfo64G8q0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=553e2bdd93aa6a1025f57b732bba1095"/>
+    <sys_hub_flow_variable action="DELETE" query="model=553e2bdd93aa6a1025f57b732bba1095"/>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_553e2bdd93aa6a1025f57b732bba1095</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>953e2bdd93aa6a1025f57b732bba10a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_553e2bdd93aa6a1025f57b732bba1095</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:07</sys_created_on>
+        <sys_id>d93e2bdd93aa6a1025f57b732bba10a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:00:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_553e2bdd93aa6a1025f57b732bba1095"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_553e2bdd93aa6a1025f57b732bba1095"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>5960fc95932e2a1025f57b732bba103c</sys_id>
+        <latest_snapshot>553e2bdd93aa6a1025f57b732bba1095</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch4-05-14-2025_06-04-2025_1836.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=5960fc95932e2a1025f57b732bba103c^sys_idNOT IN253e2bdd93aa6a1025f57b732bba10e6"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"253e2bdd93aa6a1025f57b732bba10e6","name":"plan","plan_signature":null}}</plan>
+        <plan_id>5960fc95932e2a1025f57b732bba103c</plan_id>
+        <snapshot>1d313fd193ea6a1025f57b732bba1073</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:00:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>253e2bdd93aa6a1025f57b732bba10e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:11:00</sys_updated_on>
+        <trigger display_value="">a53e2bdd93aa6a1025f57b732bba10e4</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=5960fc95932e2a1025f57b732bba103c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book a car">f1957de89366661025f57b732bba103a</application>
+        <file_path/>
+        <instance_id>106601b8ebb86294cbdefceacad0cd8f</instance_id>
+        <instance_name>dev319062</instance_name>
+        <name>sys_hub_flow_5960fc95932e2a1025f57b732bba103c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=50408000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;book_a_car&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Created_1.current","label":"Trigger - Record Created➛Booking Record","reference":"x_1792436_book_a_c_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"d9b55790-5e4c-49bb-8ed1-51417bcd766b":["record"],"683e4984-c8f8-4e52-8c91-c48904908114":["record"]},"attributes":{}},{"name":"{{static.a1fe120d93222a1025f57b732bba10ef}}","label":"Booking - Gestores","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"d9b55790-5e4c-49bb-8ed1-51417bcd766b":["approval_conditions"]}},{"name":"d9b55790-5e4c-49bb-8ed1-51417bcd766b.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"75d7c820-a4e5-461b-af9d-41fb52b5578c":["condition"],"90c1a182-d187-47ad-aacf-7505fdbefb6e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Booking Table","reference":"x_1792436_book_a_c_booking","reference_display":"Booking","type":"table_name","base_type":"table_name","usedInstances":{"d9cdbb68-8667-46c4-b085-345395faeb4f":["table_name"],"b2f12d91-a205-4f37-a97a-c5bab4a446d6":["table_name"],"09639896-f46a-4227-a889-38f9a4ac34f3":["table_name"],"0d5deb41-c0a3-4748-a0b9-44f9c29f2717":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Booking Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1792436_book_a_c_booking","column_name":"sys_id","usedInstances":{"ae2fe099-621d-4f09-9f1e-3e3e0e1e48df":["conditions"]}},{"name":"ae2fe099-621d-4f09-9f1e-3e3e0e1e48df.Table","label":"7 - Look Up Record➛Vehicle Table","reference":"x_1792436_book_a_c_vehicle","reference_display":"Vehicle","type":"table_name","base_type":"table_name","usedInstances":{"16e8acf4-b6bd-4542-8f22-d7bd8e437898":["table_name"],"81bf03b8-bec3-46b5-848e-57cbc659a227":["table_name"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Book a car&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id&gt;a53e2bdd93aa6a1025f57b732bba10e4&lt;/remote_trigger_id&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 04:10:49&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5960fc95932e2a1025f57b732bba103c&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Book a car&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Book a car" source="x_1792436_book_a_c"&gt;f1957de89366661025f57b732bba103a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_5960fc95932e2a1025f57b732bba103c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:15:14&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5960fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=5960fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_flow_record_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition table="x_1792436_book_a_c_booking"&gt;^EQ&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;name/&gt;&lt;on_delete&gt;false&lt;/on_delete&gt;&lt;on_insert&gt;true&lt;/on_insert&gt;&lt;on_update&gt;false&lt;/on_update&gt;&lt;published_version/&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;run_on_extended&gt;false&lt;/run_on_extended&gt;&lt;run_when_setting&gt;both&lt;/run_when_setting&gt;&lt;run_when_user_list/&gt;&lt;run_when_user_setting&gt;any&lt;/run_when_user_setting&gt;&lt;sys_class_name&gt;sys_flow_record_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:08&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a53e2bdd93aa6a1025f57b732bba10e4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:08&lt;/sys_updated_on&gt;&lt;table&gt;x_1792436_book_a_c_booking&lt;/table&gt;&lt;trigger_definition/&gt;&lt;/sys_flow_record_trigger&gt;&lt;sys_trigger_runner_mapping action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;data&gt;{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}&lt;/data&gt;&lt;identifier&gt;5960fc95932e2a1025f57b732bba103c&lt;/identifier&gt;&lt;runner&gt;FDTriggerRunner&lt;/runner&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:11:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b8b0b3d193ea6a1025f57b732bba102b&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:11:00&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;a53e2bdd93aa6a1025f57b732bba10e4&lt;/trigger&gt;&lt;/sys_trigger_runner_mapping&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=5960fc95932e2a1025f57b732bba103c^sys_idNOT INb8b0b3d193ea6a1025f57b732bba102b"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=5960fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=5960fc95932e2a1025f57b732bba103c^sys_idNOT IN9d60fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;5960fc95932e2a1025f57b732bba103c&lt;/id&gt;&lt;name&gt;Book a car&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 04:10:49&lt;/sys_created_on&gt;&lt;sys_id&gt;9d60fc95932e2a1025f57b732bba103c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 04:10:49&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9d60fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=5960fc95932e2a1025f57b732bba103c^sys_idNOT INbe2ea7dd93aa6a1025f57b732bba10d7,fe2ea7dd93aa6a1025f57b732bba10de"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/model&gt;&lt;model_id&gt;5960fc95932e2a1025f57b732bba103c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_5960fc95932e2a1025f57b732bba103c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:56&lt;/sys_created_on&gt;&lt;sys_id&gt;be2ea7dd93aa6a1025f57b732bba10d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 17:59:56&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=be2ea7dd93aa6a1025f57b732bba10d7"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/model&gt;&lt;model_id&gt;5960fc95932e2a1025f57b732bba103c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_5960fc95932e2a1025f57b732bba103c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;fe2ea7dd93aa6a1025f57b732bba10de&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 17:59:57&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fe2ea7dd93aa6a1025f57b732bba10de"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=5960fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=5960fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=5960fc95932e2a1025f57b732bba103c^sys_idNOT IN762ee7dd93aa6a1025f57b732bba1003"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Created&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;762ee7dd93aa6a1025f57b732bba1003&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:05&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created"&gt;798916a0c31322002841b63b12d3ae7c&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/9VY2W7jNhT9FUFPLeACWrzEeZtxMmiA6QS1Pe1DkAqURNrE0KQrUUo8g/x7L7VZ1uIlVqbOSxCR1L2HR+eeS/rhh86Qi5l+rc+Ry7De0ymXOOCIzTdrDMNSDTscrdTcCnEfSRFs9GsZRLink0Cs5ni1ZkjCYoJYCIMi8HGgX5s9PUYswrNNeOdDJHg/CZPF1LNpeH52zNHY6ttDxxXim4McL/mH8gUs8mkI4Td/ZWs/FhPekjI/wFy/fnjs6WsUQHCpEv+oTFGV3SMeGlvY8GzTtizDsK76pju0XdPybYQNAwJWmaiglQ2EbLeKnyXmPvYLFmpcBRj595xtihVLoDrlZYWeQ/odol8Zah3BgN3D6Vzx6GRMpMPeUlAP368lFTwdSXGmk4JFK/4lxa84xARFTOYcwkgUQjy8VpAViAwRmS3F0zRP+InyZHfZJBMeYsUTkjKgbiRxqAgnlAH1TspNKKIgQT+9ndxPb5y/P8wnv99OnentbD69m8xvb/SXZF/Ov5GKmCLMsDjpdl6KD/+JYqY+II9WLqDp6aEX0LX84Eka55p76W11PBHcpwkrNS17+VS4q+V89/vEbBitcvZKGXNJ/3P7Z1276eBpuh0OEfIxatGtS0q6Le+8AZpsIKG8u30KzkaOkXDfMP4nEWeW9FoNr4SP2c02nA6TiwWomvJ1JBVbT4jL0JHCQb7vlHhUSwHTIVGne3s5qOAg4vCCU3yPuo4T2gr+PtMQ4D5AFebcJCFhnnzOQk4jrgn4cPBH86IAqJFa7mvkboUWGaNkhhn2ZEkE5GtYfvqDhqGy3y3qImnCQS1nkQ7EpOVbSnOHZyZ/7LKI66THFTIrxXxyJZsmIS4mljFSdWwatktMY2QMEPFtw/CsUiXXwbSilBVJvElFn1bPYSJGdoT0qhRn4I1yNRwlo3hXgzkJSiKZbUy6gWZ2BM1S0Cr2Z5/kf4Us0+GbXXXu21rHvR/5MYI3/GNt8EgHJEw8gfW+wv1c5H1bBCLiftWOVEyNcm27Qvsl4+/XDp2QiADvB7C74pI8cEt7LlzENx24n01Md4z72ADTs8Hv3MF47HrIImQ0HGHLrLjfFkYjtnfhegfUFjfJtc0BG4UTN+ntBO87A2DNB08GeL4DZsJs9L907n043dMScwegBg5TXlYzvAWjPs7nuq32Wup4W9/nVjy5GnsDczTyRnBrgYonfewis28N0Hg0tK8GlYqvQdkHUzYw81PuMuEmTIC0uMHXdOqyLudvKdsQS5n+HHNql+Zwjk3eQWmSUqdUn0VLTEUE2hfBf7vbrtNmGBpgcqHtql0fg0J9WO1tYbhCLmvnBUj9EcZ3UqtzZgsrF3elqogk3t3r2Vcq3L8ajIndbDFk3GQxWzDtMC/+eHFkhcSttdZ0zjhW8HFj3bQeDF4h4YpMyieGPUearkgxOyfFejtS7LOPUXkttt4jXwP2HbWw5FxxTh9TObEjSNm8b4QGExok0SjRsl8Ssa+5G00uMVDK4LwMCTWV/VzXLneROpRCwT8XSHoCr3UzGNayA9TlNaqKFLq9AWN/hAYDu+U8PK7egJsAHcB78W3r5KqIm4psb+86LW41ZmP3Kkl2VxFH9qVOd93cnM7bdWN7OrTr8xvPvvt7A4oLbSmP/wGIVdPzRB8AAA==&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=5960fc95932e2a1025f57b732bba103c^sys_idNOT IN0b2ee7dd93aa6a1025f57b732bba100a,762ee7dd93aa6a1025f57b732bba1005,832ee7dd93aa6a1025f57b732bba100c,8b2ee7dd93aa6a1025f57b732bba100b,ba2ee7dd93aa6a1025f57b732bba1008,c32ee7dd93aa6a1025f57b732bba100d,c32ee7dd93aa6a1025f57b732bba100e,cb2ee7dd93aa6a1025f57b732bba100d"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Atualiza status do Campo Status do Form Booking para Aprovado&lt;/comment&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;6&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;0b2ee7dd93aa6a1025f57b732bba100a&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:13:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;b2f12d91-a205-4f37-a97a-c5bab4a446d6&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhJ04y8jZQ8bS2sJS9dMdfWdSKQZU+S03om/31XkewEL/solMEedXSu7jnHPk8dE5wt2XQxX8wBp/NZNpvOkmR2nd9wjlgUi2wyLa5ZxBSUSEwLmcT0eIjYHmTjwK5baQSLPJ3EJ8LhQBQuTC2h3QQmIflOSK5RseXTc8Rq0ES1qNmyG139rTIJGUqiPrrNV3de2iW5tq0vYp8uPVBp7kQlEcNXi4ojqSlAGoxYCYqDrXTLllY3BJB5fq9kOzB2QlnvtoRXI77T2g+J4xVI9vKQxHBMQ0oeLm7BwgO9nNtGD6FVIkfjg+FYQCPt6hzzhPvaikr5kaPNMF3JplR3PhI2PHD2URpDIrB2Pp3yYKN42FUvX3qVa6GOkYRLWeUghxNYq0XWWKenY414vJC1R/u0XXQEosSSdqYl1LVQ27TW1V4c95DsMt5KOsSFrF5InxFbFUPuPMb0BSBeE357hDeghdv1mZ6h4UPETGtWEow52aa802+NE+1DCHZTn5gbybWo7UdasMfg7BD1Fcl++yPC6Z8rBEpuzuphLHXja0MzfPJzJUa3b6zHn1X19Vj3ssYy+1pgSbIspl72qBrh8moTLkM9Ju9Vj5t5kvxPDfHO3qEg49T/YUloWW1Q29Sz+3Vv785Zy3/RoucfS9Zwg2oGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent display_value="Ask For Approval"&gt;bae0a1120b10030085c083eb37673a92&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f8f2e9920b10030085c083eb37673abd&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;762ee7dd93aa6a1025f57b732bba1005&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:13:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;d9b55790-5e4c-49bb-8ed1-51417bcd766b&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Yy3LbNhT9FQ/WsgqSIkVp51rjTjptMmO72VgeDgiAFlqKVAjQscrRv/cSAB+RbEVKlIXrbDzGfQDnXp6Dh+4qJBiaonGYuHwycXHsYOxhHPoUhx6PvXEw9gjFaIAysuQQWXCaFwzGjyQta0NVXRacKM4iZ0jLouCZ2mzAz4RcpWT90YaBhS5EysCPpnf3A7QiBcyoeIGm1ZbrUEgpiXkKodcNpm2Mar2qxyyn5RJwRaIx/mEzZ9Zz9m4GHkiq4eAB4k+KZ4wDjoSkkg/QkmSMqLxYo6kqSjBAzexDlq7biIXIlKlzSZ6k+BcW9tw6LuFQGLU9aIeR7Y8xJzOiyA3MTFVZtO3KBeXStITxhJSpuuzbTMCHlRJ5ZlIUidMmO0/LZfbeNAS1E/Q+RykBBF/VddbITVnJzSL/fN2AvBKZ7ogtMc0pSdsRUaoQcalqOBXiKdctXpLVSmQP0arIH4VOBijL4UMKg2GS5p9hTSkesiGhNe4hdJUMr8A+0+aPpBB1EX/CNJC8GSC5lpcpkbIrBXoYfSprJKYwW0Kku2BaUOfRQqzUBazyyC3mzcDSPaZ7uUU7KpnpOrY/Rc544o68IIrz/J+IRFT/AxXvUv7X1nEc8w9A1zD/1sLbQmt5r4eR9n1Je5129t44LOud/ay3lo72hi/PsD7Er4j1tqxXT/uvMZ6PAs+HP+PEw47r4JAHYUgnmNAwCPyR13EIEEANJI3gU0uYu+P+CTb1A2A01L6wOM6uGxwvArR0l/BhtNz6VL9pjJbm7pE0f3l3d4K3RPRS3G512Vh2+vxjFFEv91cmPpX8Xc2jwI2DCQ7ZOUtwfD4KPf+cUI7PeeD43GcB9R3vB6gIO/t2ZhY+Q9JE8LR/XWocu2LqeY4T1QGodkR1ZWG9BNdKSg+fO0F0/tYJcjpphRi/Jm29pasT3Us23jtI/s7LItujgGghpGbGi0roRRyniANANor43aDcFsQ2+G/Rg/dTD/9/PYz8vVTrXc5bVtM8Y6JGLHuqMDszlxfZ+re7qpKKKEGHxEm442I28VzXJQ52/cQfx2PPjWMY8WSzud+Vz/dMdZzODii+faOXKZdfa4ZVWXfDs0l9pXX3Quu0ahud6tX+ysT2Vl4wdC/XkknHLVZCg4jqP9urOTKw52g6R1me8TkazFEdFdXk0maIAHCtQ9uqarMxlrIgdgKnN+yyGVlLHSnpgjPgprZ+YYm0GKz9FL+RHdCTRn+zkp/NTFN229Q8oBqcpi9i55S7sQF6pl9uRf+080922o1+yu8Uz6WofVDAUQa73wk1ef8fMtyzBTgWAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Atualiza o campo Avaible do campo da Tabela Vehicle para False.&lt;/comment&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;8&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;832ee7dd93aa6a1025f57b732bba100c&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:13:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;16e8acf4-b6bd-4542-8f22-d7bd8e437898&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTyW7bMBT8lYBnWZAtL7FvRQKf2gRoglzSQHgSH20C1FKScuIa/vc+ipRjOO4SICjQI4dvmRlyHndMcrZgo9lkNgEcTdI8HaVJko6LKeeIQszy4UiMWcQqKJEqLeQKs+4QsQ2o1oG7HfUKTObzwXQ05IOxSOaDuRjiIMUUExzi+JKL+N717vfUyKVpFGwfQj8hxVoqrrFii8eniDWgaYNFzRa7k6u/5asgR0Wl3dKLG0/4nAi7bc5in88NqDV3pJKI4YvFiiOxEaAMRqyEioOt9ZYtrG4J0Aj8tlLbQ8VaVtarLeHFyB+09jJxdQJJXhGcOByz4JKHxTVYuKPJhW31wbRaFmi8MRwFtMpeHWO+4Laxsq58SyczdNeqLasbbwk7DDh6lNYQCWycTsc8yBB36/r5a89yKavOknCp6gLU4QTWapm31vHZsVben/Hao73bzjoCUWFJO7MSmkZWq6zR9UZ2e4h2Ga8UHWKh6mfiZ+SqiqFwGmN6AYiXhF938ANo6XZ9oTHUvI+Y2ZorBca8yia/s++tI+1NCHIz75hrKbRs7CdasMGgbB/1wcl/+xHh9c8JiYqbo9DABiRR+9ZSF++mvg3G2Zp3RuXPDPuoLHuKp5T7iGBJ5CxmXsJJTMLlxUO4DFEZflRUppMk+Z/S4pV9QFhOXf+HgaFljUFtM1/dr3t/jo4S/4tEPf0EEE8E8YwGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Record"&gt;b93f42810b30030085c083eb37673a63&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Procura o registro de Veiculo com o mesmo Sys ID que o registro de Booking ( cria uma pill)&lt;/comment&gt;&lt;compiled_snapshot&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;7&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;8b2ee7dd93aa6a1025f57b732bba100b&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:13:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;ae2fe099-621d-4f09-9f1e-3e3e0e1e48df&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VYUW/iOBD+K1GeKZcQINC3Uyuklfa20rbXl72V5dhOsdbYWcehpYj/fuM4CRFQIDoqtbpHj8f2NzPfN3byY+1z6l/7dBpM0+l0NImDIIqCYDyOCA6TJBqTJEjw0O/5Ei8YeBqcCAbDJRaFHb+gMJ4OhtEYJUr9QhgRtGRzTkonyvNM4NVj5fvYTJA5F1Qz6V//+NnzM6xhc8O0f73emToXncAJE+D6UMHbQWtWWTNE5ZyzfW0v8765CaWphRL0fPZimKQMMKRY5KznL7Ck2Ci9aiyaYXonxdYw59LAjr51fsn5K5w7CaxfyiAqwtxcM0RVjpw5vcUG3xtdEFPoypXMFScsd/mgLMWFMDdtm3O4ywxX0i1xYbvVShQL+c2lw282qEsCliIHECyzgVrkVRjp/Vw9f69Rzrgsc1JNCkWwaEbYGM2Twlg8a58JtoCN0AJnGZdPKNNqycvFgGXRfxIw6KdCPcOhOX+SfUws8D7kFfdnYL8tzY9YcxvFX7ANLAZAXABDkCthrgpdpnKJiCjyckJjmbu9/E3Pz1f5jcB5vo0cUo5+Fxa3y0MVMXJJs0uI5pn5E7ZYsiq4Ta8WyOgoBadbyhElKbco8pZKAA3i9J8CFtP1+gZIYxhFYZ8UGvJr+m5+s9nXTIeVHUV1OqJaVDftkA6FWclrz/b10AaVvMKLyWsYBJ9JYHD4x9NXd8W4FJyQTUiPkoxu+ZQrbZDLZUs3+3rozPMzINQ8v7PM9JLVW6gqmqecCXroFpnZiZ1bZPD/vEU+JMkBEEWuelwKLssnAQB9L/aPjlIvCXd4VtKrdWdYG87JvgawZ5T32lkJZ8CplXAPZ3sPDs8BiHW/Lymz2+trYyWA6GICiAaXEcC6CbNJ5IGc169AW83a/9X6411/oGBrQbg5JLBOZ4Zdzxxs9gUcdVJwm2xu5vYNzl34ufiGInvv2QLmsLQ6Dzn9omdOn5jZnl57UWWesfh1aL5iHKoLVYb3Dk/P8OjXT9J6evIULaByPIMXsmYEyJEjrBlKVSEpqt7GWyLZSqZc56Zy3m803xnoR3oKhOmZOfNKb6/x7ngRn46jTuWX1KsDqU7LPQjEKwPxmkC6hd2laQ0v+Di9dNOaYS7KasBnT9YqJ9Na6Tca14lCHmHEmV3tTFDhRUH997Z3SAIH298JrJ/iG/ryrYkwnAwHeBxHYRgEYUDjYBLH4WScpGMcD9OtRhHKJYFuCjunQBXYHtXUqOsc7Pcf11K7NpozUNUUvFXSfloPYuNZWFBfr4Z1GnjVUBKlBMNyp6M8wD3xx6zCX/F19OG6yqf4o1Twh91MO9PBXL/Xu6Hgf0v+u2BfLMUmLBhMQkquJnEYXw1TOr6aUjy6wtNkFEeUkWF6yafAz38Bbno6mKgVAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;75d7c820-a4e5-461b-af9d-41fb52b5578c&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;ba2ee7dd93aa6a1025f57b732bba1008&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:13:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;d9cdbb68-8667-46c4-b085-345395faeb4f&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhO04y8jZQ8bS2sJS9dMdfWdSKQZU+S03oh/31XluyELPsolMEedXSu7jnHPk97JjhbsHQ+m88A09k0n6bTJJleFzecI5blPJ+k5TWLmIIKiWkhl5j1h4jtQLYO3O+XGsEizybxkXA4EIUL00jo1oFJSLEVkmtUbPH0HLEGNFEtarbYn139rTIJOUqiPrrNV3de2iW5tmsuYp8uPVBr7kQlEcNXi4ojqSlBGoxYBYqDrXXHFla3BJB5fq9kNzK2QlnvtoJXI77T2g+J45VI9oqQxHjMQkoeLm/BwgO9XNhWj6HVokDjg+FYQivt8hTzhPvGilr5kd5mmK5lW6k7HwkbHzj5KK0hEdg4n055sFE+bOuXL4PKlVB9JOFS1gXI8QTWapG31unZs1Y8Xsjao0PaLjoCUWJFO7MKmkaoTdboeif6PSS7ijeSDnEp6xfSZ8RGxVA4jzF9AYhXhN/28Bq0cLs+0zM0fIiY6cxSgjFH25R39q11on0IwW7mE3MjhRaN/UgLdhicHaKhIvlvf0Q4/nOlQMnNST2MpW58bWmGpz9X4uz2jfX4s6qhHqtB1rnMoRZYkSyLmZd9Vo1webUOl6Eek/eqx80sSf6nhnhn71CQ89T/YUloWWNQ28yzh3Vv785Jy3/RoucfGsgobGoGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Wait For Condition"&gt;89ce8a4187120010663ca1bb36cb0be3&lt;/action_type&gt;&lt;action_type_parent display_value="Wait For Condition"&gt;8bb9a8160b10030085c083eb37673aec&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Aguarda a confirmação de entrega do Veiculo&lt;/comment&gt;&lt;compiled_snapshot&gt;89ce8a4187120010663ca1bb36cb0be3&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;9&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;c32ee7dd93aa6a1025f57b732bba100d&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:13:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;683e4984-c8f8-4e52-8c91-c48904908114&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+2X227jNhCGX2Wha9MVJUqmcre1EzRAugEcd3uxXQgUOYyJ0pJXh2zcIO9eSqIt+RBv0nUCBOidOTzon5/zeaQvD44SzplDIg6UEUxH2HNd7IahzxlOEj/kiZsAcQZOyhZgVubAs1yY8R3TVR14eBjnwEoQMR7yKs8hLR8fzbxQxVKz1We7zET4XGlh5p2zL18HzpLl5sQScufsYWfquZI0S0CbpdO1pl2N5WpZj0XGq4XRFat18MrunNiZD5cTM2M21XLwwIH7ElIBRodkuoCBs2CpYGWWr5yzMq9MwOQsrlO92qyYq7Rs81yw+0L9Yx7se/U6CSYxbj3YDGPrTxuWE1ayG3MyL6t8Y1emOBStJQIkq3Q57sfaBdfLUmVpu6VkiV7vznS1SD+1hjibA3rXURVGBCzrPGvlbVryZp59n65FXqi0ccSmqDPO9GbEyjJXSVXWch6cSs0Omd2GD9stlTbXHzei4yKr8sak6fn4ejqJ//w4G/92Po2n5zez6eV4dl7vAA3N0Qu2XKr0Nl7m2Z1qFJp8F8NbbQZDqbPvJrFC3aZDxmtzhubq2PDCxCdN+DPLVf3Q380xZnOt8o9Ufavgsik8KbGPwxBh7PqI4CREEYUAuRAwEngkDELPeRw4xaoYa1YUncfmcuNvVW1R67j1Nm6up02zqdB6M8/Vsvxo5N2BdfRxsIYxOFr5rCv03pkdkPcxHkUe8cM4ybK/Yxbz5ofxa5/KXzcTL4TzxxLXcM6amjws2fK5F7vq7/3wqZ2wdHrH6bSRDs+2rg/QSd13RKdN6+fx3PJ6m84tt1URtzVqRTenvhWCHqYRJYmP/IQEiERSIupSgggwlweeGBHM/wOCPwTveMuRXRXzLBWqzqvogSdAm0NzEH9VruuLuvD2iTu86KStUfboG/eFHhJvEdyLXR06wCLon6pBEtd9TxCeqkVumb3N4Jbdb8IaCBomgUsRSEoR8UcURdjzUBgygTHhQrqv2+5ccayaZe/ds1QLyKoylprd9rhz9ylb/1u9jKtnKFlzdZ42f5ZW0ZMSLV2m/2pg6W53M+X0y4VVatEiL+xux9h6R2SdrL11Tu/0tr7Xb8IV54yaZsVQ5HNAJEw4opJL5EMSSD9IaDJyX6GH8eM1HO2Xqqhy1txiR9QJPt+eoWPN0qQT8LQ0S1JzN7vxq/2DLE7B/zj9FE57du98z3UTr8XU3OybsFVRV0X7rrRDGWA2CpL6E40h4kUYsYh4KAphBETS0GfRK1BG8dHqlvulXPA5iErDaSl7ho41ZTedgKelWcq6Qt8GbNqLW8LCkxFG914G+SLtizvEWy+rd8mdvAGW8/mFAl3fp/0ue4LG/rVsg9i/mLfpbp6HfQEcYWFeHYkXeoj6ZIRGEU1cYkov8eGE3H39F8N/ElqpFAAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;11&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;c32ee7dd93aa6a1025f57b732bba100e&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:13:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;81bf03b8-bec3-46b5-848e-57cbc659a227&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTy27bMBD8lYBnWZAtP2LfigQ+tQnQBL6kgbASlzYB6lGScuIa/vcuRcoxDPcRICjQI4c73JmR5mnPJGcLNppNZhPA0STN01GaJOm4mHKOKMQsH47EmEWsghJp0kKuMOsOEduCah243xNXYDKfD6ajIR+MRTIfzMUQBymmmOAQx9dcxI+OezgQkUvTKNitAp+QYiMV11ixxdNzxBrQtMGiZov92dXf6lWQo6LRbunVnRd8yYTdNRexz5ceqDV3opKI4avFiiOpEaAMRqyEioOt9Y4trG4J0Aj8vlK748RGVta7LeHVyB+09jpxcwLJXhGSOB6zkJKHxS1YeKCXC9vqY2i1LND4YDgKaJW9OcX8wH1jZV15SmczsGvVltWdj4QdHzj5KK0hEdg4n055sCEeNvXL117lUlZdJOFS1QWo4wms1TJvrdOzZ618vJC1R/u0XXQEosKSdmYlNI2s1lmj663s9pDsMl4rOsRC1S+kz8h1FUPhPMb0BSBeEn7bwSvQ0u36Qs8Q+RAxszM3Cox5s015Z99bJ9qHEOxmPjFHKbRs7CdasMXg7BD1xcl/+yPC2z8nJCpuTkoDW5Ak7VtLLB5sn/Xi0sg7i/JnfX1Rlr3Ac8F9QbAkbRYzb+CsJOHyahUuQ1GGH1WU6SRJ/qeueGcfUJXz1P9hXWhZY1DbzE/3697fopO+/6JPzz8BBN9fMIoGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Assim que condição (Delivery é true), Altera o status do Booking para 'Done'&lt;/comment&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;10&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;cb2ee7dd93aa6a1025f57b732bba100d&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:13:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;0d5deb41-c0a3-4748-a0b9-44f9c29f2717&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhJ04y8jZQ8bS2sJS9dMdfWVSKQZU+S02Yh/31XlpwEL/solMEedXSu7jnHPk97Jjmbs/FsOpsCjqeTYjKeZNnkurzhHFGIWTEai2uWMA0VEtNBoTDvDgnbgmo9uN8vDIJDno/SE+FwIAqXtlGwW0UmIeVGKm5Qs/nTc8IaMER1aNh8P7j6W2UKClREffSbr+6CtEty3a65iH269EBtuBeVJQxfHWqOpEaAspiwCjQHV5sdmzvTEkDm+b1WuyNjI7ULbit4tfI7rf2QeZ5AslfGJI7HPKYUYHELDh7o5dK15hhaLUu0IRiOAlrlFudYINw3TtY6jHQ243St2krfhUjY8YGzj9JaEoGN9+mVRxviYVO/fOlVLqXuIomXqi5BHU/gnJFF67yePWvl44WsA9qn7aMjEBVWtDOvoGmkXueNqbey20Oyq3St6JAKVb+QPivXOoXSe0zpC0C6JPy2g1dgpN/1mZ6h4UPC7M4uFFh7sk15599aLzqEEO3mITE/UhrZuI+0YIvR2SHpK1L89keE0z8nJCpuz+phHXXja0szfPJzJQa3b6zHn1X19Vj2soYy+1pgRbIc5kH2oBrx8moVL2M9Ru9Vj5tplv1PDQnO3qEgw9T/YUloWWPRuDyw+3Vv785Zy3/Roucf6j8wgGoGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=5960fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=5960fc95932e2a1025f57b732bba103c^sys_idNOT IN072ee7dd93aa6a1025f57b732bba1009,0f2ee7dd93aa6a1025f57b732bba1009,4f2ee7dd93aa6a1025f57b732bba100e,b22ee7dd93aa6a1025f57b732bba1007"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;432ee7dd93aa6a1025f57b732bba1009&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;75d7c820-a4e5-461b-af9d-41fb52b5578c&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;072ee7dd93aa6a1025f57b732bba1009&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:57&lt;/sys_updated_on&gt;&lt;ui_id&gt;00259136-a56a-41f5-8e46-573b2ebabde6&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;4b2ee7dd93aa6a1025f57b732bba1009&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;75d7c820-a4e5-461b-af9d-41fb52b5578c&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else If"&gt;666e5545c3e232002841b63b12d3ae99&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;0f2ee7dd93aa6a1025f57b732bba1009&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:57&lt;/sys_updated_on&gt;&lt;ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1UTY/TMBD9KyjnNErSr21vFWglJGAldrUXWEUTe9JaOLaxnXZL1f/OOB/dClqBEOLELX7jefPeeCaHSDfeNN496JVzYq2i5aenOBIqYPR9iBTUGC0jphUXXmhVtEAcbUE2IbAyxli9RU4YF85I2D9eCLGNkNxiz2/AEotHGy0PP4T83mAhoURJDPfeCrWmdMHpVKVQZQuWsXE+G+dpmt9MsnI2LrOcjwEhp3tD4utB7qt3LRJf9RHqEe6GStryICtL4wifPSpO8pcVSIdxVIPi4LXdnxCLwO+UfAE2Qnmii8LlZye+EXc+nYaLFZJHhl3wdCz6nnUw22jB8M4EgR3ioZR9DtOyqdWHzkfoNlbQSD90m5DGER+aIDqo6CVV9xu9+zgUvBWqNdgHpWYgTyfw1Iay8ejCw6DEmoiKGoyh5hThMUWbTFrqZC3pkFRS76homJ0EWBCeUI8guSX8TQs/ghXBxXuioeROZglOsKKdM6Lzliwc27YUX5sgqDPYWym6btAFx6wwfkV1ttirPsY/D+nZfB4OfFFOp/NFOprihI0mi7Ic3SDPRtNsks1LxuezWZlAO6ogC+fB4/H4uUnTMYers/23aP/BXmSX9uLCRlxfhvwXyxCe7zd3IU3T/8twvgzCFd1Q997a4n+8C09h8LsKrpsbjkw4EvIQsLfDfz0E9jQAgp1DO22/BAsv2PE7n6HjcSEGAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;8b2ee7dd93aa6a1025f57b732bba100e&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;12&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;4f2ee7dd93aa6a1025f57b732bba100e&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:57&lt;/sys_updated_on&gt;&lt;ui_id&gt;cace8438-ae91-4a72-b6f0-c79041f6a5dd&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;f62ee7dd93aa6a1025f57b732bba1006&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;b22ee7dd93aa6a1025f57b732bba1007&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:56&lt;/sys_updated_on&gt;&lt;ui_id&gt;75d7c820-a4e5-461b-af9d-41fb52b5578c&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1UTW/bMAz9K4PPjuGPOGlyKzYUGLCtQFv0shUGLdGJNlnyJDlpFuS/j/JHGrQpNgw97mY9iuR71KP3gW5d0zp7py+tFSsVLL8+hIFQHqPvfaCgxmAZMK24cEKrogPCYAOy9YEbbIzeICeIC9tI2N2/jLC1kNzgUL0BQzUcmmC5fxZyuwYLCSVKKnDrjFArShecTlUMVbJgCcvSWZbGcXoxTcpZViYpzwAho3tj4vuR7LtPHRK+qsL3I9yOnbThnlYShwE+OlSc6C8rkBbDoAbFwWmzOyIGgV8r+QSshXJULvCXH634RbXTPPcXKySNDPvg8VgMI+thttaC4XXjCfaIg1IOOUzLtlZfeh1+2FhBK904bEJaS/Ww8aQ9i4FSdbvW25ux4ZVQncAhKDUDeTyBozGUrUPrHwYl1lSoqKFpaDiFf0zRJROXOlpJOkSV1Ftq6p0TAfPEI5oRRFeEf+jgezDCq/hMZSi5p1mCFazoXEblnCEJh24sxc/WE+oFDlKKfhp0wTIjGndJfTY4sD6ELy164s79ni/KPJ8v4kmOUzaZLspycoE8meTJNJmXjM9nszIibqQOZGEdODwcvrVxnJErvyNz56z9VmXfYi8WkFd5Eufn92I6O7cXZzbi9WVI/7AM/vn+chfiOP6/DKfLIGzRm3rQ1jX/51148MbvO9jeNxyZsETkzmMfx7+6D+zIAIKdQlttfngJT9jhN+swn+kfBgAA&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=5960fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=5960fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_5960fc95932e2a1025f57b732bba103c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;3e2ea7dd93aa6a1025f57b732bba10dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Book a car" source="x_1792436_book_a_c"&gt;f1957de89366661025f57b732bba103a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 17:59:57&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_5960fc95932e2a1025f57b732bba103c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 17:59:57&lt;/sys_created_on&gt;&lt;sys_id&gt;be2ea7dd93aa6a1025f57b732bba10e0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Book a car" source="x_1792436_book_a_c"&gt;f1957de89366661025f57b732bba103a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 17:59:57&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5960fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5960fc95932e2a1025f57b732bba103c"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;book_a_car&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Created_1.current","label":"Trigger - Record Created➛Booking Record","reference":"x_1792436_book_a_c_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"d9b55790-5e4c-49bb-8ed1-51417bcd766b":["record"],"683e4984-c8f8-4e52-8c91-c48904908114":["record"]},"attributes":{}},{"name":"{{static.a1fe120d93222a1025f57b732bba10ef}}","label":"Booking - Gestores","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"d9b55790-5e4c-49bb-8ed1-51417bcd766b":["approval_conditions"]}},{"name":"d9b55790-5e4c-49bb-8ed1-51417bcd766b.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"75d7c820-a4e5-461b-af9d-41fb52b5578c":["condition"],"90c1a182-d187-47ad-aacf-7505fdbefb6e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Booking Table","reference":"x_1792436_book_a_c_booking","reference_display":"Booking","type":"table_name","base_type":"table_name","usedInstances":{"d9cdbb68-8667-46c4-b085-345395faeb4f":["table_name"],"b2f12d91-a205-4f37-a97a-c5bab4a446d6":["table_name"],"09639896-f46a-4227-a889-38f9a4ac34f3":["table_name"],"0d5deb41-c0a3-4748-a0b9-44f9c29f2717":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Booking Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1792436_book_a_c_booking","column_name":"sys_id","usedInstances":{"ae2fe099-621d-4f09-9f1e-3e3e0e1e48df":["conditions"]}},{"name":"ae2fe099-621d-4f09-9f1e-3e3e0e1e48df.Table","label":"7 - Look Up Record➛Vehicle Table","reference":"x_1792436_book_a_c_vehicle","reference_display":"Vehicle","type":"table_name","base_type":"table_name","usedInstances":{"16e8acf4-b6bd-4542-8f22-d7bd8e437898":["table_name"],"81bf03b8-bec3-46b5-848e-57cbc659a227":["table_name"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Book a car&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Book a car"&gt;5960fc95932e2a1025f57b732bba103c&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:59&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=553e2bdd93aa6a1025f57b732bba1095"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=553e2bdd93aa6a1025f57b732bba1095"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=553e2bdd93aa6a1025f57b732bba1095"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=553e2bdd93aa6a1025f57b732bba1095^sys_idNOT INd13e2bdd93aa6a1025f57b732bba1096"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/id&gt;&lt;name&gt;Book a car&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;d13e2bdd93aa6a1025f57b732bba1096&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d13e2bdd93aa6a1025f57b732bba1096"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=553e2bdd93aa6a1025f57b732bba1095^sys_idNOT IN953e2bdd93aa6a1025f57b732bba1097,d93e2bdd93aa6a1025f57b732bba10a5"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/model&gt;&lt;model_id&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_553e2bdd93aa6a1025f57b732bba1095&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;953e2bdd93aa6a1025f57b732bba1097&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:58&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=953e2bdd93aa6a1025f57b732bba1097"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/model&gt;&lt;model_id&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_553e2bdd93aa6a1025f57b732bba1095&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;d93e2bdd93aa6a1025f57b732bba10a5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:58&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d93e2bdd93aa6a1025f57b732bba10a5"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=553e2bdd93aa6a1025f57b732bba1095"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=553e2bdd93aa6a1025f57b732bba1095"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=553e2bdd93aa6a1025f57b732bba1095^sys_idNOT IN253e2bdd93aa6a1025f57b732bba10b9"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Created&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;253e2bdd93aa6a1025f57b732bba10b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created"&gt;798916a0c31322002841b63b12d3ae7c&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/9VY2W7jNhT9FUFPLeACWrzEeZtxMmiA6QS1Pe1DkAqURNrE0KQrUUo8g/x7L7VZ1uIlVqbOSxCR1L2HR+eeS/rhh86Qi5l+rc+Ry7De0ymXOOCIzTdrDMNSDTscrdTcCnEfSRFs9GsZRLink0Cs5ni1ZkjCYoJYCIMi8HGgX5s9PUYswrNNeOdDJHg/CZPF1LNpeH52zNHY6ttDxxXim4McL/mH8gUs8mkI4Td/ZWs/FhPekjI/wFy/fnjs6WsUQHCpEv+oTFGV3SMeGlvY8GzTtizDsK76pju0XdPybYQNAwJWmaiglQ2EbLeKnyXmPvYLFmpcBRj595xtihVLoDrlZYWeQ/odol8Zah3BgN3D6Vzx6GRMpMPeUlAP368lFTwdSXGmk4JFK/4lxa84xARFTOYcwkgUQjy8VpAViAwRmS3F0zRP+InyZHfZJBMeYsUTkjKgbiRxqAgnlAH1TspNKKIgQT+9ndxPb5y/P8wnv99OnentbD69m8xvb/SXZF/Ov5GKmCLMsDjpdl6KD/+JYqY+II9WLqDp6aEX0LX84Eka55p76W11PBHcpwkrNS17+VS4q+V89/vEbBitcvZKGXNJ/3P7Z1276eBpuh0OEfIxatGtS0q6Le+8AZpsIKG8u30KzkaOkXDfMP4nEWeW9FoNr4SP2c02nA6TiwWomvJ1JBVbT4jL0JHCQb7vlHhUSwHTIVGne3s5qOAg4vCCU3yPuo4T2gr+PtMQ4D5AFebcJCFhnnzOQk4jrgn4cPBH86IAqJFa7mvkboUWGaNkhhn2ZEkE5GtYfvqDhqGy3y3qImnCQS1nkQ7EpOVbSnOHZyZ/7LKI66THFTIrxXxyJZsmIS4mljFSdWwatktMY2QMEPFtw/CsUiXXwbSilBVJvElFn1bPYSJGdoT0qhRn4I1yNRwlo3hXgzkJSiKZbUy6gWZ2BM1S0Cr2Z5/kf4Us0+GbXXXu21rHvR/5MYI3/GNt8EgHJEw8gfW+wv1c5H1bBCLiftWOVEyNcm27Qvsl4+/XDp2QiADvB7C74pI8cEt7LlzENx24n01Md4z72ADTs8Hv3MF47HrIImQ0HGHLrLjfFkYjtnfhegfUFjfJtc0BG4UTN+ntBO87A2DNB08GeL4DZsJs9L907n043dMScwegBg5TXlYzvAWjPs7nuq32Wup4W9/nVjy5GnsDczTyRnBrgYonfewis28N0Hg0tK8GlYqvQdkHUzYw81PuMuEmTIC0uMHXdOqyLudvKdsQS5n+HHNql+Zwjk3eQWmSUqdUn0VLTEUE2hfBf7vbrtNmGBpgcqHtql0fg0J9WO1tYbhCLmvnBUj9EcZ3UqtzZgsrF3elqogk3t3r2Vcq3L8ajIndbDFk3GQxWzDtMC/+eHFkhcSttdZ0zjhW8HFj3bQeDF4h4YpMyieGPUearkgxOyfFejtS7LOPUXkttt4jXwP2HbWw5FxxTh9TObEjSNm8b4QGExok0SjRsl8Ssa+5G00uMVDK4LwMCTWV/VzXLneROpRCwT8XSHoCr3UzGNayA9TlNaqKFLq9AWN/hAYDu+U8PK7egJsAHcB78W3r5KqIm4psb+86LW41ZmP3Kkl2VxFH9qVOd93cnM7bdWN7OrTr8xvPvvt7A4oLbSmP/wGIVdPzRB8AAA==&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=553e2bdd93aa6a1025f57b732bba1095^sys_idNOT IN553e2bdd93aa6a1025f57b732bba10b6,5d3e2bdd93aa6a1025f57b732bba10b6,9d3e2bdd93aa6a1025f57b732bba10b3,a53e2bdd93aa6a1025f57b732bba10b8,ad3e2bdd93aa6a1025f57b732bba10b7,ad3e2bdd93aa6a1025f57b732bba10b8,d13e2bdd93aa6a1025f57b732bba10b5,d93e2bdd93aa6a1025f57b732bba10b4"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Record"&gt;b93f42810b30030085c083eb37673a63&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Procura o registro de Veiculo com o mesmo Sys ID que o registro de Booking ( cria uma pill)&lt;/comment&gt;&lt;compiled_snapshot&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;7&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;553e2bdd93aa6a1025f57b732bba10b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;ae2fe099-621d-4f09-9f1e-3e3e0e1e48df&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VYUW/iOBD+K1GeKZcQINC3Uyuklfa20rbXl72V5dhOsdbYWcehpYj/fuM4CRFQIDoqtbpHj8f2NzPfN3byY+1z6l/7dBpM0+l0NImDIIqCYDyOCA6TJBqTJEjw0O/5Ei8YeBqcCAbDJRaFHb+gMJ4OhtEYJUr9QhgRtGRzTkonyvNM4NVj5fvYTJA5F1Qz6V//+NnzM6xhc8O0f73emToXncAJE+D6UMHbQWtWWTNE5ZyzfW0v8765CaWphRL0fPZimKQMMKRY5KznL7Ck2Ci9aiyaYXonxdYw59LAjr51fsn5K5w7CaxfyiAqwtxcM0RVjpw5vcUG3xtdEFPoypXMFScsd/mgLMWFMDdtm3O4ywxX0i1xYbvVShQL+c2lw282qEsCliIHECyzgVrkVRjp/Vw9f69Rzrgsc1JNCkWwaEbYGM2Twlg8a58JtoCN0AJnGZdPKNNqycvFgGXRfxIw6KdCPcOhOX+SfUws8D7kFfdnYL8tzY9YcxvFX7ANLAZAXABDkCthrgpdpnKJiCjyckJjmbu9/E3Pz1f5jcB5vo0cUo5+Fxa3y0MVMXJJs0uI5pn5E7ZYsiq4Ta8WyOgoBadbyhElKbco8pZKAA3i9J8CFtP1+gZIYxhFYZ8UGvJr+m5+s9nXTIeVHUV1OqJaVDftkA6FWclrz/b10AaVvMKLyWsYBJ9JYHD4x9NXd8W4FJyQTUiPkoxu+ZQrbZDLZUs3+3rozPMzINQ8v7PM9JLVW6gqmqecCXroFpnZiZ1bZPD/vEU+JMkBEEWuelwKLssnAQB9L/aPjlIvCXd4VtKrdWdYG87JvgawZ5T32lkJZ8CplXAPZ3sPDs8BiHW/Lymz2+trYyWA6GICiAaXEcC6CbNJ5IGc169AW83a/9X6411/oGBrQbg5JLBOZ4Zdzxxs9gUcdVJwm2xu5vYNzl34ufiGInvv2QLmsLQ6Dzn9omdOn5jZnl57UWWesfh1aL5iHKoLVYb3Dk/P8OjXT9J6evIULaByPIMXsmYEyJEjrBlKVSEpqt7GWyLZSqZc56Zy3m803xnoR3oKhOmZOfNKb6/x7ngRn46jTuWX1KsDqU7LPQjEKwPxmkC6hd2laQ0v+Di9dNOaYS7KasBnT9YqJ9Na6Tca14lCHmHEmV3tTFDhRUH997Z3SAIH298JrJ/iG/ryrYkwnAwHeBxHYRgEYUDjYBLH4WScpGMcD9OtRhHKJYFuCjunQBXYHtXUqOsc7Pcf11K7NpozUNUUvFXSfloPYuNZWFBfr4Z1GnjVUBKlBMNyp6M8wD3xx6zCX/F19OG6yqf4o1Twh91MO9PBXL/Xu6Hgf0v+u2BfLMUmLBhMQkquJnEYXw1TOr6aUjy6wtNkFEeUkWF6yafAz38Bbno6mKgVAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Atualiza o campo Avaible do campo da Tabela Vehicle para False.&lt;/comment&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;8&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;5d3e2bdd93aa6a1025f57b732bba10b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;16e8acf4-b6bd-4542-8f22-d7bd8e437898&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTyW7bMBT8lYBnWZAtL7FvRQKf2gRoglzSQHgSH20C1FKScuIa/vc+ipRjOO4SICjQI4dvmRlyHndMcrZgo9lkNgEcTdI8HaVJko6LKeeIQszy4UiMWcQqKJEqLeQKs+4QsQ2o1oG7HfUKTObzwXQ05IOxSOaDuRjiIMUUExzi+JKL+N717vfUyKVpFGwfQj8hxVoqrrFii8eniDWgaYNFzRa7k6u/5asgR0Wl3dKLG0/4nAi7bc5in88NqDV3pJKI4YvFiiOxEaAMRqyEioOt9ZYtrG4J0Aj8tlLbQ8VaVtarLeHFyB+09jJxdQJJXhGcOByz4JKHxTVYuKPJhW31wbRaFmi8MRwFtMpeHWO+4Laxsq58SyczdNeqLasbbwk7DDh6lNYQCWycTsc8yBB36/r5a89yKavOknCp6gLU4QTWapm31vHZsVben/Hao73bzjoCUWFJO7MSmkZWq6zR9UZ2e4h2Ga8UHWKh6mfiZ+SqiqFwGmN6AYiXhF938ANo6XZ9oTHUvI+Y2ZorBca8yia/s++tI+1NCHIz75hrKbRs7CdasMGgbB/1wcl/+xHh9c8JiYqbo9DABiRR+9ZSF++mvg3G2Zp3RuXPDPuoLHuKp5T7iGBJ5CxmXsJJTMLlxUO4DFEZflRUppMk+Z/S4pV9QFhOXf+HgaFljUFtM1/dr3t/jo4S/4tEPf0EEE8E8YwGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent display_value="Ask For Approval"&gt;bae0a1120b10030085c083eb37673a92&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f8f2e9920b10030085c083eb37673abd&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;9d3e2bdd93aa6a1025f57b732bba10b3&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;d9b55790-5e4c-49bb-8ed1-51417bcd766b&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Yy3LbNhT9FQ/WsgqSIkVp51rjTjptMmO72VgeDgiAFlqKVAjQscrRv/cSAB+RbEVKlIXrbDzGfQDnXp6Dh+4qJBiaonGYuHwycXHsYOxhHPoUhx6PvXEw9gjFaIAysuQQWXCaFwzGjyQta0NVXRacKM4iZ0jLouCZ2mzAz4RcpWT90YaBhS5EysCPpnf3A7QiBcyoeIGm1ZbrUEgpiXkKodcNpm2Mar2qxyyn5RJwRaIx/mEzZ9Zz9m4GHkiq4eAB4k+KZ4wDjoSkkg/QkmSMqLxYo6kqSjBAzexDlq7biIXIlKlzSZ6k+BcW9tw6LuFQGLU9aIeR7Y8xJzOiyA3MTFVZtO3KBeXStITxhJSpuuzbTMCHlRJ5ZlIUidMmO0/LZfbeNAS1E/Q+RykBBF/VddbITVnJzSL/fN2AvBKZ7ogtMc0pSdsRUaoQcalqOBXiKdctXpLVSmQP0arIH4VOBijL4UMKg2GS5p9hTSkesiGhNe4hdJUMr8A+0+aPpBB1EX/CNJC8GSC5lpcpkbIrBXoYfSprJKYwW0Kku2BaUOfRQqzUBazyyC3mzcDSPaZ7uUU7KpnpOrY/Rc544o68IIrz/J+IRFT/AxXvUv7X1nEc8w9A1zD/1sLbQmt5r4eR9n1Je5129t44LOud/ay3lo72hi/PsD7Er4j1tqxXT/uvMZ6PAs+HP+PEw47r4JAHYUgnmNAwCPyR13EIEEANJI3gU0uYu+P+CTb1A2A01L6wOM6uGxwvArR0l/BhtNz6VL9pjJbm7pE0f3l3d4K3RPRS3G512Vh2+vxjFFEv91cmPpX8Xc2jwI2DCQ7ZOUtwfD4KPf+cUI7PeeD43GcB9R3vB6gIO/t2ZhY+Q9JE8LR/XWocu2LqeY4T1QGodkR1ZWG9BNdKSg+fO0F0/tYJcjpphRi/Jm29pasT3Us23jtI/s7LItujgGghpGbGi0roRRyniANANor43aDcFsQ2+G/Rg/dTD/9/PYz8vVTrXc5bVtM8Y6JGLHuqMDszlxfZ+re7qpKKKEGHxEm442I28VzXJQ52/cQfx2PPjWMY8WSzud+Vz/dMdZzODii+faOXKZdfa4ZVWXfDs0l9pXX3Quu0ahud6tX+ysT2Vl4wdC/XkknHLVZCg4jqP9urOTKw52g6R1me8TkazFEdFdXk0maIAHCtQ9uqarMxlrIgdgKnN+yyGVlLHSnpgjPgprZ+YYm0GKz9FL+RHdCTRn+zkp/NTFN229Q8oBqcpi9i55S7sQF6pl9uRf+080922o1+yu8Uz6WofVDAUQa73wk1ef8fMtyzBTgWAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Assim que condição (Delivery é true), Altera o status do Booking para 'Done'&lt;/comment&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;10&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;a53e2bdd93aa6a1025f57b732bba10b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;0d5deb41-c0a3-4748-a0b9-44f9c29f2717&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhJ04y8jZQ8bS2sJS9dMdfWVSKQZU+S02Yh/31XlpwEL/solMEedXSu7jnHPk97Jjmbs/FsOpsCjqeTYjKeZNnkurzhHFGIWTEai2uWMA0VEtNBoTDvDgnbgmo9uN8vDIJDno/SE+FwIAqXtlGwW0UmIeVGKm5Qs/nTc8IaMER1aNh8P7j6W2UKClREffSbr+6CtEty3a65iH269EBtuBeVJQxfHWqOpEaAspiwCjQHV5sdmzvTEkDm+b1WuyNjI7ULbit4tfI7rf2QeZ5AslfGJI7HPKYUYHELDh7o5dK15hhaLUu0IRiOAlrlFudYINw3TtY6jHQ243St2krfhUjY8YGzj9JaEoGN9+mVRxviYVO/fOlVLqXuIomXqi5BHU/gnJFF67yePWvl44WsA9qn7aMjEBVWtDOvoGmkXueNqbey20Oyq3St6JAKVb+QPivXOoXSe0zpC0C6JPy2g1dgpN/1mZ6h4UPC7M4uFFh7sk15599aLzqEEO3mITE/UhrZuI+0YIvR2SHpK1L89keE0z8nJCpuz+phHXXja0szfPJzJQa3b6zHn1X19Vj2soYy+1pgRbIc5kH2oBrx8moVL2M9Ru9Vj5tplv1PDQnO3qEgw9T/YUloWWPRuDyw+3Vv785Zy3/Roucf6j8wgGoGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Wait For Condition"&gt;89ce8a4187120010663ca1bb36cb0be3&lt;/action_type&gt;&lt;action_type_parent display_value="Wait For Condition"&gt;8bb9a8160b10030085c083eb37673aec&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Aguarda a confirmação de entrega do Veiculo&lt;/comment&gt;&lt;compiled_snapshot&gt;89ce8a4187120010663ca1bb36cb0be3&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;9&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;ad3e2bdd93aa6a1025f57b732bba10b7&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;683e4984-c8f8-4e52-8c91-c48904908114&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+2X227jNhCGX2Wha9MVJUqmcre1EzRAugEcd3uxXQgUOYyJ0pJXh2zcIO9eSqIt+RBv0nUCBOidOTzon5/zeaQvD44SzplDIg6UEUxH2HNd7IahzxlOEj/kiZsAcQZOyhZgVubAs1yY8R3TVR14eBjnwEoQMR7yKs8hLR8fzbxQxVKz1We7zET4XGlh5p2zL18HzpLl5sQScufsYWfquZI0S0CbpdO1pl2N5WpZj0XGq4XRFat18MrunNiZD5cTM2M21XLwwIH7ElIBRodkuoCBs2CpYGWWr5yzMq9MwOQsrlO92qyYq7Rs81yw+0L9Yx7se/U6CSYxbj3YDGPrTxuWE1ayG3MyL6t8Y1emOBStJQIkq3Q57sfaBdfLUmVpu6VkiV7vznS1SD+1hjibA3rXURVGBCzrPGvlbVryZp59n65FXqi0ccSmqDPO9GbEyjJXSVXWch6cSs0Omd2GD9stlTbXHzei4yKr8sak6fn4ejqJ//w4G/92Po2n5zez6eV4dl7vAA3N0Qu2XKr0Nl7m2Z1qFJp8F8NbbQZDqbPvJrFC3aZDxmtzhubq2PDCxCdN+DPLVf3Q380xZnOt8o9Ufavgsik8KbGPwxBh7PqI4CREEYUAuRAwEngkDELPeRw4xaoYa1YUncfmcuNvVW1R67j1Nm6up02zqdB6M8/Vsvxo5N2BdfRxsIYxOFr5rCv03pkdkPcxHkUe8cM4ybK/Yxbz5ofxa5/KXzcTL4TzxxLXcM6amjws2fK5F7vq7/3wqZ2wdHrH6bSRDs+2rg/QSd13RKdN6+fx3PJ6m84tt1URtzVqRTenvhWCHqYRJYmP/IQEiERSIupSgggwlweeGBHM/wOCPwTveMuRXRXzLBWqzqvogSdAm0NzEH9VruuLuvD2iTu86KStUfboG/eFHhJvEdyLXR06wCLon6pBEtd9TxCeqkVumb3N4Jbdb8IaCBomgUsRSEoR8UcURdjzUBgygTHhQrqv2+5ccayaZe/ds1QLyKoylprd9rhz9ylb/1u9jKtnKFlzdZ42f5ZW0ZMSLV2m/2pg6W53M+X0y4VVatEiL+xux9h6R2SdrL11Tu/0tr7Xb8IV54yaZsVQ5HNAJEw4opJL5EMSSD9IaDJyX6GH8eM1HO2Xqqhy1txiR9QJPt+eoWPN0qQT8LQ0S1JzN7vxq/2DLE7B/zj9FE57du98z3UTr8XU3OybsFVRV0X7rrRDGWA2CpL6E40h4kUYsYh4KAphBETS0GfRK1BG8dHqlvulXPA5iErDaSl7ho41ZTedgKelWcq6Qt8GbNqLW8LCkxFG914G+SLtizvEWy+rd8mdvAGW8/mFAl3fp/0ue4LG/rVsg9i/mLfpbp6HfQEcYWFeHYkXeoj6ZIRGEU1cYkov8eGE3H39F8N/ElqpFAAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;11&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;ad3e2bdd93aa6a1025f57b732bba10b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;81bf03b8-bec3-46b5-848e-57cbc659a227&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTy27bMBD8lYBnWZAtP2LfigQ+tQnQBL6kgbASlzYB6lGScuIa/vcuRcoxDPcRICjQI4c73JmR5mnPJGcLNppNZhPA0STN01GaJOm4mHKOKMQsH47EmEWsghJp0kKuMOsOEduCah243xNXYDKfD6ajIR+MRTIfzMUQBymmmOAQx9dcxI+OezgQkUvTKNitAp+QYiMV11ixxdNzxBrQtMGiZov92dXf6lWQo6LRbunVnRd8yYTdNRexz5ceqDV3opKI4avFiiOpEaAMRqyEioOt9Y4trG4J0Aj8vlK748RGVta7LeHVyB+09jpxcwLJXhGSOB6zkJKHxS1YeKCXC9vqY2i1LND4YDgKaJW9OcX8wH1jZV15SmczsGvVltWdj4QdHzj5KK0hEdg4n055sCEeNvXL117lUlZdJOFS1QWo4wms1TJvrdOzZ618vJC1R/u0XXQEosKSdmYlNI2s1lmj663s9pDsMl4rOsRC1S+kz8h1FUPhPMb0BSBeEn7bwSvQ0u36Qs8Q+RAxszM3Cox5s015Z99bJ9qHEOxmPjFHKbRs7CdasMXg7BD1xcl/+yPC2z8nJCpuTkoDW5Ak7VtLLB5sn/Xi0sg7i/JnfX1Rlr3Ac8F9QbAkbRYzb+CsJOHyahUuQ1GGH1WU6SRJ/qeueGcfUJXz1P9hXWhZY1DbzE/3697fopO+/6JPzz8BBN9fMIoGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Atualiza status do Campo Status do Form Booking para Aprovado&lt;/comment&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;6&lt;/order&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;d13e2bdd93aa6a1025f57b732bba10b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;b2f12d91-a205-4f37-a97a-c5bab4a446d6&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhJ04y8jZQ8bS2sJS9dMdfWdSKQZU+S03om/31XkewEL/solMEedXSu7jnHPk8dE5wt2XQxX8wBp/NZNpvOkmR2nd9wjlgUi2wyLa5ZxBSUSEwLmcT0eIjYHmTjwK5baQSLPJ3EJ8LhQBQuTC2h3QQmIflOSK5RseXTc8Rq0ES1qNmyG139rTIJGUqiPrrNV3de2iW5tq0vYp8uPVBp7kQlEcNXi4ojqSlAGoxYCYqDrXTLllY3BJB5fq9kOzB2QlnvtoRXI77T2g+J4xVI9vKQxHBMQ0oeLm7BwgO9nNtGD6FVIkfjg+FYQCPt6hzzhPvaikr5kaPNMF3JplR3PhI2PHD2URpDIrB2Pp3yYKN42FUvX3qVa6GOkYRLWeUghxNYq0XWWKenY414vJC1R/u0XXQEosSSdqYl1LVQ27TW1V4c95DsMt5KOsSFrF5InxFbFUPuPMb0BSBeE357hDeghdv1mZ6h4UPETGtWEow52aa802+NE+1DCHZTn5gbybWo7UdasMfg7BD1Fcl++yPC6Z8rBEpuzuphLHXja0MzfPJzJUa3b6zHn1X19Vj3ssYy+1pgSbIspl72qBrh8moTLkM9Ju9Vj5t5kvxPDfHO3qEg49T/YUloWW1Q29Sz+3Vv785Zy3/RoucfS9Zwg2oGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;75d7c820-a4e5-461b-af9d-41fb52b5578c&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;d93e2bdd93aa6a1025f57b732bba10b4&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;d9cdbb68-8667-46c4-b085-345395faeb4f&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VTXWvbMBT9K0XPxjhO04y8jZQ8bS2sJS9dMdfWdSKQZU+S03oh/31XluyELPsolMEedXSu7jnHPk97JjhbsHQ+m88A09k0n6bTJJleFzecI5blPJ+k5TWLmIIKiWkhl5j1h4jtQLYO3O+XGsEizybxkXA4EIUL00jo1oFJSLEVkmtUbPH0HLEGNFEtarbYn139rTIJOUqiPrrNV3de2iW5tmsuYp8uPVBr7kQlEcNXi4ojqSlBGoxYBYqDrXXHFla3BJB5fq9kNzK2QlnvtoJXI77T2g+J45VI9oqQxHjMQkoeLm/BwgO9XNhWj6HVokDjg+FYQivt8hTzhPvGilr5kd5mmK5lW6k7HwkbHzj5KK0hEdg4n055sFE+bOuXL4PKlVB9JOFS1gXI8QTWapG31unZs1Y8Xsjao0PaLjoCUWJFO7MKmkaoTdboeif6PSS7ijeSDnEp6xfSZ8RGxVA4jzF9AYhXhN/28Bq0cLs+0zM0fIiY6cxSgjFH25R39q11on0IwW7mE3MjhRaN/UgLdhicHaKhIvlvf0Q4/nOlQMnNST2MpW58bWmGpz9X4uz2jfX4s6qhHqtB1rnMoRZYkSyLmZd9Vo1webUOl6Eek/eqx80sSf6nhnhn71CQ89T/YUloWWNQ28yzh3Vv785Jy3/RoucfGsgobGoGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=553e2bdd93aa6a1025f57b732bba1095"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=553e2bdd93aa6a1025f57b732bba1095^sys_idNOT IN553e2bdd93aa6a1025f57b732bba10b0,553e2bdd93aa6a1025f57b732bba10b1,5d3e2bdd93aa6a1025f57b732bba10b2,9d3e2bdd93aa6a1025f57b732bba10b1"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;f62ee7dd93aa6a1025f57b732bba1006&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;553e2bdd93aa6a1025f57b732bba10b0&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:59&lt;/sys_updated_on&gt;&lt;ui_id&gt;75d7c820-a4e5-461b-af9d-41fb52b5578c&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Vy27bMBD8lYJnWdDDsmPfAgcBCqQNkAS5tIGwIimbLUWqJGXHNfzvXephG4mLNmiOvZmz3OXMaAfeEd24unH2QV9aK5aKzL88BUQoj+HvHVFQcTInVCsmnNAqb4GArEE2vnDHa6PXnCHEhK0lbB9fV+hKSGZ4P70GgzMcN2S+e1ESDBvLCMp4RmOaJpM0iaLkYhwXk7SIE5YChxQHSii4xKuLgdaHmxYJfsvXbWuPW2eEWvbnm37K/QBqwzyrOAoIf3ZcMWQ/L0FaHpAKFAOnzfaAGA7sVskjsBLK4TjiLz9b8RMfTLLMXyw5SqS8Kx6Oee9YB5dX4ACpNNQ1pr9KV1pQbjtzGC+hkW5xinUXbmsvtWtxUMihW8umUp87R8hhwPCBEGkskuC1V+qp9zrK+5Xe3A0sr4VqXemLUlOQhxM49K5onOezI1zyCgflFdQ1Opr7BRBtM3KpwqXEQ1hKvcFH/baFQD3xEI2F8BrxqxZ+BCO8ik84Bps7mgVYQfN2M3Ec2sTJPiB2axcSrD2KRHfzH42n2EnuxeWdP76FGlG7S3x5zXsd++D1op/s+G7HZkWWTWfRKONjOhrPimJ0wVk8yuJxPC0om04mRYhsUS/I3DpwfL//2kRRirv9jVN3LiDvNfZt6ZpBVmZxlJ1P13hyLl1ncvXGSCV/iJT/nn+ZqCiK/kfqnyMlbN4FodfWPv6OiXry8enePHhNhUVqDx77OPzD+MIWl0vQU2ijzXcv6ojtfwEsnLClqwYAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;432ee7dd93aa6a1025f57b732bba1009&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;75d7c820-a4e5-461b-af9d-41fb52b5578c&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;553e2bdd93aa6a1025f57b732bba10b1&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:59&lt;/sys_updated_on&gt;&lt;ui_id&gt;00259136-a56a-41f5-8e46-573b2ebabde6&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;8b2ee7dd93aa6a1025f57b732bba100e&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;12&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;5d3e2bdd93aa6a1025f57b732bba10b2&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:59&lt;/sys_updated_on&gt;&lt;ui_id&gt;cace8438-ae91-4a72-b6f0-c79041f6a5dd&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;4b2ee7dd93aa6a1025f57b732bba1009&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;75d7c820-a4e5-461b-af9d-41fb52b5578c&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Book a car"&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else If"&gt;666e5545c3e232002841b63b12d3ae99&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;9d3e2bdd93aa6a1025f57b732bba10b1&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:10:59&lt;/sys_updated_on&gt;&lt;ui_id&gt;90c1a182-d187-47ad-aacf-7505fdbefb6e&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1VXY/aMBD8K5WfQ5QEAgdviNNJla49qXe6l/YUbWwHrDq2GztwNOK/d50PQC2ntiqPfcOz3vXMZEc0RNfO1M4+6aW1Yq3I4vNLQITyGP5uiIKSkwWhWjHhhFZZCwRkC7L2haUxptJbzhBjwhoJ++cLJboRklW8n2+gwimOV2TR/FQSDDuLCIp4TmM6TqbjJIqSm0mcT8d5nLAxcEhwoIScS7y6Goi9u2+R4E3Gbm88bl0l1Lo/3/dTHgdQV8yziqOA8FfHFUP2iwKk5QEpQTFwutofkYoDe1DyBGyEcjiO+MuvVnzHB5M09RcLjhIp74rHY9Zb1sHFLThAKjV1ddVfpRstKLedOYwXUEu3Ose6Cw/GS+1aHORy6NayLtXHzhFyHDB8IURqiyS48Uo99V5H8bjRu08DyzuhWlf6otQU5PEEDr3La+f5NIRLXuKgrARj0NHML4Bom5FLGa4lHsJC6h0+6vctBOqJh2gshHeI37bwM1TCq/iAY7C5o5mDFTRrdxPHoU2cHAJi93YlwdqTSHQ3+1Z7ip3kXlzW+eNbaCWMW+LLW97rOAS/rvrZljcNm+dpOptHo5RP6Ggyz/PRDWfxKI0n8SynbDad5iG0Cw8ysw4cPxy+1FE0ZvBmQq419qrpii+l60Ku/jJSyW8i5b/nHyYqiqL/kfrnSAmbdUHotbWPXzFRLz4+3ZtHr6mwSO3JY++H/xhf2ONyCXoO7XT11Ys6YYcfo64G8q0GAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=553e2bdd93aa6a1025f57b732bba1095"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=553e2bdd93aa6a1025f57b732bba1095"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_553e2bdd93aa6a1025f57b732bba1095&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;953e2bdd93aa6a1025f57b732bba10a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Book a car" source="x_1792436_book_a_c"&gt;f1957de89366661025f57b732bba103a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_553e2bdd93aa6a1025f57b732bba1095&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:07&lt;/sys_created_on&gt;&lt;sys_id&gt;d93e2bdd93aa6a1025f57b732bba10a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Book a car" source="x_1792436_book_a_c"&gt;f1957de89366661025f57b732bba103a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Book a car"&gt;f1957de89366661025f57b732bba103a&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:00:07&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_553e2bdd93aa6a1025f57b732bba1095"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_553e2bdd93aa6a1025f57b732bba1095"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;5960fc95932e2a1025f57b732bba103c&lt;/sys_id&gt;&lt;latest_snapshot&gt;553e2bdd93aa6a1025f57b732bba1095&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-yokohama-12-18-2024__patch4-05-14-2025_06-04-2025_1836.zip&lt;/compiler_build&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=5960fc95932e2a1025f57b732bba103c^sys_idNOT IN253e2bdd93aa6a1025f57b732bba10e6"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.OncePerRecord&lt;/binding_strategy&gt;&lt;plan&gt;{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"253e2bdd93aa6a1025f57b732bba10e6","name":"plan","plan_signature":null}}&lt;/plan&gt;&lt;plan_id&gt;5960fc95932e2a1025f57b732bba103c&lt;/plan_id&gt;&lt;snapshot&gt;1d313fd193ea6a1025f57b732bba1073&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-04 18:00:08&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;253e2bdd93aa6a1025f57b732bba10e6&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-04 18:11:00&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;a53e2bdd93aa6a1025f57b732bba10e4&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=5960fc95932e2a1025f57b732bba103c"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1998441034</payload_hash>
+        <record_name>Book a car</record_name>
+        <reverted_from/>
+        <source>7d957de89366661025f57b732bba103b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:15:14</sys_created_on>
+        <sys_id>b2a1f71593ea6a1025f57b732bba1089</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197d6a656c30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:15:14</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>7aa1f71521ea6a104fb45487078d1488</update_guid>
+        <update_guid_history>7aa1f71521ea6a104fb45487078d1488:-1998441034,b8b0b3d1e8ea6a1049c8417392f67d48:791657138,84b073d16bea6a10657e8f329bdf9f7e:-1839622859,613e2bdd25aa6a10f907110c714b4af4:246147242,453e2bdddaaa6a10f6e23c7d435edf65:-1146698465,c72ee7dd44aa6a10042dff331cee6b1d:990443866,5d60fc95132e2a106661c25debf1163f:1190740209</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 18:16:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>bc1c7c4967ed4c90a80d447c6d26f900</sys_id>
+        <sys_metadata>5960fc95932e2a1025f57b732bba103c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Book a car</sys_name>
+        <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+        <sys_scope_delete display_value="">31d2f76aabe44b8faa919cfb2969e021</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_5960fc95932e2a1025f57b732bba103c</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_5960fc95932e2a1025f57b732bba103c">b2a1f71593ea6a1025f57b732bba1089</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:16:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

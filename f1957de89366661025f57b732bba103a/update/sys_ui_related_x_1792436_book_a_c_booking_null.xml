@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_1792436_book_a_c_booking" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Booking - Default view" name="x_1792436_book_a_c_booking" related_list="NULL" sys_domain="global" view="Default view">234b90d993aa2a1025f57b732bba108a</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>sysapproval_approver.sysapproval</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-04 02:38:40</sys_created_on>
+            <sys_id>2b4b90d993aa2a1025f57b732bba108b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-04 02:38:40</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Booking - Default view" name="x_1792436_book_a_c_booking" related_list="NULL" sys_domain="global" view="Default view">234b90d993aa2a1025f57b732bba108a</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>sysapproval_group.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-04 02:38:40</sys_created_on>
+            <sys_id>234b90d993aa2a1025f57b732bba108c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-04 02:38:40</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Booking - Default view</calculated_name>
+            <filter/>
+            <name>x_1792436_book_a_c_booking</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-04 02:38:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>234b90d993aa2a1025f57b732bba108a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Booking - Default view</sys_name>
+            <sys_package display_value="Book a car" source="x_1792436_book_a_c">f1957de89366661025f57b732bba103a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Book a car">f1957de89366661025f57b732bba103a</sys_scope>
+            <sys_update_name>sys_ui_related_x_1792436_book_a_c_booking_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-04 02:38:40</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>
